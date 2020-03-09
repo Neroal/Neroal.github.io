@@ -1,4 +1,4 @@
-title: Texture Theme
+title: Neroal Programming
 author: GitHub User
 email: b0543019@ems.niu.edu.tw
 description: > # this means to ignore newlines until "show_exerpts:"
@@ -15,7 +15,7 @@ sass:
 
 permalink: /posts/:title/
 texture:
-  title: Neroal 開發日誌
+  title: Neroal
   tagline: Developer.
   date_format: "%b %-d, %Y"
   style: black
