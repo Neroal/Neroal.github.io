@@ -1,0 +1,127 @@
+# C++指標(pointer)
+
+## 指標Pointer
+
+### 甚麼是指標pointer
+
+![](https://i.imgur.com/HDQ9Ig8.jpg)
+
+這張照片是位於婆羅洲的一處森林，如果你想要這張照片的話，我可以給你這張照片的網址
+ https://i.imgur.com/HDQ9Ig8.jpg 
+
+你應該會想說我莫名其妙傳了這張照片有麼意義，這概念其實跟指標非常的像。我給了你網址，你就可以藉由網址取得照片，也就是說網址是**指向**這張照片的**指標**
+
+### 優點
+1. 可動態配置/釋放記憶體
+2. 不同的函式可共享大量的儲存空間
+3. 改善某些子程式的效率
+
+### 缺點
+1. 複雜的宣告方式
+2. 指標操作錯誤造成系統崩潰
+
+### 使用方式
+宣告方式為 **資料型態^*^** **指標** **=** **&被指向物件**
+
+下方最後印出的**ptr**就類似網址，而 **^*^ptr**就類似取得網址的照片
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a=5;
+    int* ptr;
+    ptr = &a;
+    
+    cout << ptr << endl;
+    
+    cout << *ptr << endl;
+    
+    system("pause");
+}
+
+```
+顯示結果
+
+![](https://i.imgur.com/upXupV4.png)
+
+
+:::info
+因為記憶體每次存放變數的位址是**隨機的**，所以每次執行的位址都會不同:exclamation: 
+:::
+
+:::info
+這邊的 **&** 符號與之前的**reference**是不同的東西，稱呼為 **取址(address of)**，而reference則是**別名(alias)** :mega: 
+:::
+
+### 指標陣列(pointer of array)
+陣列本身就是一個指標，所以當指標指向它時就不需再加上 **&取址** 
+
+指標陣列指向的位址為array的起始**位置array[0]**，而且在記憶體中的位址是連續的。如果我們要取得array[1]的話位址加上1即可
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int b[] = {1,3,5,7,9};
+
+    int *ptr;
+    ptr = b;
+
+    cout << *ptr << endl;
+
+    cout << *(ptr + 1) << endl;
+
+    system("pause");
+}
+
+```
+
+顯示結果 
+
+![](https://i.imgur.com/vBWcBdW.png)
+
+### 結構指標(pointer of struct)
+結構同樣能應用在指標，因為struct是一個結構而不是像陣列是一個指標，所以這邊就需要加上 **&取址**
+
+既然**ptr**是一個指標，那麼 **^*^ptr** 就是這個指標所指向的記憶體內容，也就是一個結構。那個在 **^*^ptr** 後引用 **.name** ，就是引用結構變數裡面的名字
+
+我們也可以直接寫成 **ptr -> name** 代表ptr這個指標指向結構變數的內容
+
+```c++
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Student
+{
+    string name;
+    int id;
+    int grade;
+};
+
+int main()
+{
+    Student student = {"Neroal",400123,4};
+
+    Student* ptr = &student;
+    
+    cout << (*ptr).name << endl;
+
+    cout << ptr->name << endl;
+
+    system("pause");
+}
+```
+結果顯示 
+
+![](https://i.imgur.com/16qGCiz.png)
+
+:::warning
+在使用結構指標的時候，**(*ptr).name**的括號切記要加上去，不然編譯器會氣噗噗 
+:::
+
+###### tags: `C++` `pointer`
