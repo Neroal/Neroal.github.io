@@ -1,78 +1,130 @@
-# Urban
+# texture
 
-Web Agency themed business template for Jekyll. Browse through a [live demo](https://teal-worm.cloudvent.net/).
-Increase the web presence of your agency with this configurable theme.
+A configurable jekyll theme for simply beautiful blogs.
 
-![Urban template screenshot](images/_screenshot.png)
+**Demo**: [thelehhman.com/texture](https://thelehhman.com/texture)
 
-Urban was made by [CloudCannon](https://cloudcannon.com/), the Cloud CMS for Jekyll.
+![texture theme preview](/screen1.png)
 
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
 
-## Features
+## Installation on Github Pages
 
-* Contact form
-* Pre-built pages
-* Pre-styled components
-* Blog with pagination
-* Post category pages
-* Disqus comments for posts
-* Staff and author system
-* Configurable footer
-* Optimised for editing in [CloudCannon](https://cloudcannon.com/)
-* RSS/Atom feed
-* SEO tags
-* Google Analytics
+Add this line to your site's `_config.yml`:
+```yaml
+remote_theme: thelehhman/texture
+```
 
-## Setup
+**NOTE: If you are forking this repo, remove `base_url: /texture` in the `_config.yml` which is required to load the required website assets**
+## Installation
 
-1. Add your site and author details in `_config.yml`.
-2. Add your Google Analytics and Disqus keys to `_config.yml`.
-3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+Add this line to your Jekyll site's `Gemfile`:
 
-## Develop
+```ruby
+gem "texture"
+```
 
-Urban was built with [Jekyll](https://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
+And add this line to your Jekyll site's `_config.yml`:
 
-Install the dependencies with [Bundler](https://bundler.io/):
+```yaml
+theme: texture
+```
 
-~~~bash
-$ bundle install
-~~~
+And then execute:
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
+    $ bundle
 
-~~~bash
-$ bundle exec jekyll serve
-~~~
+Or install it yourself as:
 
-## Editing
+    $ gem install texture
 
-Urban is already optimised for adding, updating and removing pages, staff, advice, company details and footer elements in [CloudCannon](https://app.cloudcannon.com/).
+## Usage
 
-### Posts
+The "texture" key in _config.yml is used to customize the theme data.
+```yaml
+texture:
+  title: Adam Denisov
+  tagline: Developer. Designer
+  date_format: "%b %-d, %Y"
 
-* Add, update or remove a post in the *Posts* collection.
-* The **Staff Author** field links to members in the **Staff** collection.
-* Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
-* Change the defaults when new posts are created in `_posts/_defaults.md`.
+  social_links:
+    twitter: thelehhman
+    github:  thelehhman
+    linkedIn: in/thelehhman # format: locale/username
+```
 
-### Contact Form
+**Styling**
 
-* Preconfigured to work with [CloudCannon](https://app.cloudcannon.com/), but easily changed to another provider (e.g. [FormSpree](https://formspree.io/)).
-* Sends email to the address listed in company details.
+Multiple header styles are supported using the "style" property under texture in `_config.yml`.
 
-### Staff
+```yaml
+texture:
+  style: [yellow|red|black|blue|green|purple]
+```
 
-* Reused around the site to save multiple editing locations.
-* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
+For example, the blue style looks like this:
 
-### Footer
+![texture theme blue](/screen2.png)
 
-* Exposed as a data file to give clients better access.
-* Set in the *Data* / *Footer* section.
 
-### Company details
+**Texture Picker**
 
-* Reused around the site to save multiple editing locations.
-* Set in the *Data* / *Company* section.
+You can toggle the texture picker to show/experiment various textures on your site using the showPicker variable. Remember to make it `false` for production.
+
+```yaml
+texture:
+  showPicker: [false|true] # show the texture selector(development purposes)
+```
+
+**Comments (Disqus)**
+
+Comments on posts can be enabled by specifying your disqus_shortname under texture in `_config.yml`. For example,
+```yaml
+texture:
+  disqus_shortname: games
+```
+
+**Google Analytics**
+
+It can be enabled by specifying your analytics id under texture in `_config.yml`
+```yaml
+texture:
+  analytics_id: '< YOUR ID >'
+```
+
+**Excerpts**
+
+Excerpts can be enabled by adding the following line to your `_config.yml`
+```yaml
+show_excerpts: true
+```
+
+**Toggle Navbar**
+
+```yaml
+texture:
+  showNav: true
+```
+
+**Layouts**
+
+- Home
+- Page
+- Post
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/thelehhman/texture. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+## Development
+
+To set up your environment to develop this theme, run `bundle install`.
+
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `texture.gemspec` accordingly.
+
+## License
+
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
