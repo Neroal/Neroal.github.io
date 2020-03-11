@@ -22,11 +22,10 @@ texture:
   showPicker: false
 
   # generate social links in footer
-  social_links:
-    twitter: 
-    github: 
-    linkedIn: 
-    facebook: Neroal
+  social_links:   
+    facebook: neroal
+    github: neroal
+    linkedIn: neroal
     rss: rss
  
 
