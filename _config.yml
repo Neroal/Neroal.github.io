@@ -1,7 +1,7 @@
 title: Neroal Programming
 author: GitHub User
 email: b0543019@ems.niu.edu.tw
-description: 偶爾會上傳一些日誌>  
+description: >  
 
  
 show_excerpts: true # set to true to show excerpts on the homepage
@@ -19,12 +19,12 @@ texture:
   date_format: "%b %-d, %Y"
   style: black
   showNav: true
-  showPicker: false
+  showPicker: true
 
   # generate social links in footer
   social_links:
     twitter: 
-    github:  
+    github:  https://github.com/Neroal
     linkedIn: 
     rss: rss
  
