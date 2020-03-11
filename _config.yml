@@ -24,8 +24,8 @@ texture:
   # generate social links in footer
   social_links:   
     facebook: neroal
-    github: neroal
-    linkedIn: neroal
+    github: 
+    linkedIn: 
     rss: rss
  
 
