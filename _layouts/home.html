@@ -6,10 +6,8 @@ layout: page
 	{%- for post in site.posts -%}
 	<li ><a href="{{ post.url | relative_url }}">		
 		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-		<div class="post-meta">
-			<a class="post-link" >
-				<h2 class="post-title">{{ post.title | escape }}</h2>
-			</a>
+		<div class="post-meta">			
+				<h2 class="post-title">{{ post.title | escape }}</h2>			
 			<div class="post-date"><i class="icon-calendar"></i>{{ post.date | date: date_format }}</div>
 		</div>
 		<div class="post">
