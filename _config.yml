@@ -1,8 +1,8 @@
 title: Neroal Programming
 author: GitHub User
 email: b0543019@ems.niu.edu.tw
-description: > # this means to ignore newlines until "show_exerpts:"
-  偶爾會上傳一些開發日誌、自製遊戲
+description: >  偶爾會上傳一些開發日誌、自製遊戲
+ 
 show_excerpts: true # set to true to show excerpts on the homepage
 baseurl: "/"
 
@@ -17,7 +17,7 @@ texture:
   tagline: Developer.
   date_format: "%b %-d, %Y"
   style: black
-  showNav: false
+  showNav: true
   showPicker: false
 
   # generate social links in footer
