@@ -3,7 +3,7 @@
 
 @import "theme";
 
- {%- if site.texture.showPicker -%}
+{%- if site.texture.showPicker -%}
 #texture-picker {
     position: fixed;
     {%- if site.texture.showNav -%}
@@ -51,7 +51,6 @@
     #green { background-color: mediumseagreen; }
 }
 {%- endif -%}
-
 // Textures
 .texture-black {
     background-image: url('{{ site.baseurl }}/assets/textures/black.jpg');
