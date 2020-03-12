@@ -60,15 +60,7 @@
     }
 }
 
-div.navbar
-{
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  padding: 5px;
-  background-color: #fff;
-  border: 2px solid #ccc;
-}
+
 
 .texture-blue {
     background-image: url('{{ site.baseurl }}/assets/textures/blue.jpg');
