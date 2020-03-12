@@ -9,20 +9,13 @@
 </script>
 {%- endif -%}
 
-{%- if site.texture.showPicker -%}
 <div id="texture-picker">
 	<div style="display:flex;justify-content: space-between">
 		<i class="fas fa-arrow-up">
-			<button onclick="topFunction()" id="myBtn" title="Gotop"><img src=""></button>
+			<button onclick="topFunction()" id="myBtn" title="Gotop"></button>
 		</i>
 	</div>
 	
 </div>
-<script src="{{ "/assets/js/picker.js" | relative_url }}"></script>
-{%- endif -%}
 
-{%- if site.texture.useMathJax -%}
-<script type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-{%- endif -%}
+
