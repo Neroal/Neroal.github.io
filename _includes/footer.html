@@ -12,18 +12,12 @@
 {%- if site.texture.showPicker -%}
 <div id="texture-picker">
 	<div style="display:flex;justify-content: space-between">
-		<p>Select Texture</p>
-		<p><a id="hidePicker" href="#">Hide</a></p>
+		<!--BACKtoTOP-START-->
+		<a style="display:scroll;position:fixed;bottom:0px;right:5px;" href="#" title="" onFocus="if(this.blur)this.blur()">
+		<img alt='' border='0' onmouseover="this.src='放大後圖片網址'" src="放大前圖片網址" onmouseout="this.src='放大前圖片網址'" /></a>
+		<!--BACKtoTOP-STOP-->	
 	</div>
-	<div class="texture-colors">
-		<div id="black"></div>
-		<div id="blue"></div>	
-		<div id="red"></div>	
-		<div id="purple"></div>		
-		<div id="green"></div>
-	</div>
-	<p class="info">You can use the <b>showPicker</b> property in _config.yml to hide this picker permanently.</p>
-	<p class="info">You can use the <b>texture</b> property in _config.yml to apply a texture permanently.</p>
+	
 </div>
 <script src="{{ "/assets/js/picker.js" | relative_url }}"></script>
 {%- endif -%}
