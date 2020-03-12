@@ -51,6 +51,7 @@
     #green { background-color: mediumseagreen; }
 }
 {%- endif -%}
+
 // Textures
 .texture-black {
     background-image: url('{{ site.baseurl }}/assets/textures/black.jpg');
