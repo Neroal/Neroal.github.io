@@ -2,6 +2,19 @@
 ---
 
 @import "theme";
+#myBtn {
+  display: none; //初始化不顯示
+  position: fixed; //fixed = 畫面的絕對位置，所以會跟著跑
+  bottom: 30px; //離下面30 pixel
+  right: 30px; //離右邊30 pixel
+  border-radius: 50px; //半徑圓
+  background-color: white; //背景色
+  opacity:0.5; //透明度
+  cursor: pointer; //游標指過去會變手指
+}
+#myBtn:hover {
+  background-color: #555; //游標只上去會變灰色
+}
 
 {%- if site.texture.showPicker -%}
 #texture-picker {
@@ -111,19 +124,5 @@
     .post-date {
         color: #ddd;
     }
-}
-
-#myBtn {
-  display: none; //初始化不顯示
-  position: fixed; //fixed = 畫面的絕對位置，所以會跟著跑
-  bottom: 30px; //離下面30 pixel
-  right: 30px; //離右邊30 pixel
-  border-radius: 50px; //半徑圓
-  background-color: white; //背景色
-  opacity:0.5; //透明度
-  cursor: pointer; //游標指過去會變手指
-}
-#myBtn:hover {
-  background-color: #555; //游標只上去會變灰色
 }
 
