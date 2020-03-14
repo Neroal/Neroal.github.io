@@ -2,18 +2,13 @@
 ---
 
 @import "theme";
-#myBtn {
-  display: block; //初始化不顯示
-  position: fixed; //fixed = 畫面的絕對位置，所以會跟著跑
-  bottom: 30px; //離下面30 pixel
-  right: 30px; //離右邊30 pixel
-  border-radius: 50px; //半徑圓
-  background-color: white; //背景色
-  opacity:0.5; //透明度
-  cursor: pointer; //游標指過去會變手指
-}
-#myBtn:hover {
-  background-color: #555; //游標只上去會變灰色
+
+#menu {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 8em;
+  margin-top: -2.5em;
 }
 
 {%- if site.texture.showPicker -%}
