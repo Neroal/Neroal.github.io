@@ -8,9 +8,10 @@
   right: 0;
   top: 50%;
   border-radius: 50px;
-  background-color: blue;
+  background-color: white;
   width: 8em;
   margin-top: -2.5em;
+   opacity:0.5;
 }
 
 {%- if site.texture.showPicker -%}
