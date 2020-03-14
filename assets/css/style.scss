@@ -3,7 +3,7 @@
 
 @import "theme";
 #myBtn {
-  display: "block"; //初始化不顯示
+  display: block; //初始化不顯示
   position: fixed; //fixed = 畫面的絕對位置，所以會跟著跑
   bottom: 30px; //離下面30 pixel
   right: 30px; //離右邊30 pixel
