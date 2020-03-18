@@ -14,7 +14,7 @@ Content Brower中右鍵 -> 選擇Blueprint Class -> 選擇Actor
 ![](https://i.imgur.com/susT5ui.png)
 
 
-<b>建立跳台物件</b>
+<b>建立跳台物件</b><br>
 創建完Actor後我們直接進入到Blueprint畫面，開始建立跳台的形狀，這邊的範例是用立方體(讀者也可以使用其他形狀)。
 
 Add Component -> 搜尋Cube後新增 
@@ -25,7 +25,7 @@ Add Component -> 搜尋Cube後新增
 
 ![](https://i.imgur.com/bYUcBtq.png)
 
-<b>透過Blueprint讓跳台移動</b>
+<b>透過Blueprint讓跳台移動</b><br>
 接著我們要開始讓跳台移動起來，因為跳台會被隨機生成在地圖中，所以我們會使用到**Event BeginPlay**這個節點，代表跳台生成時就會觸發，接著我們只要增加移動的程式，就可以達成目標的效果
 ![](https://i.imgur.com/M4iy64R.png)
 
