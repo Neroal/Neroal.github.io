@@ -1,12 +1,12 @@
-在許多遊戲中，常常會看到跑酷的元素，我們今天將在Unreal實做出跑酷小遊戲。就像上方示意圖，跳台將會在3個紅色點隨機生成，並且跳台生成後會開始移動，最後當玩家抵達終點時會播放特殊音效
+在許多遊戲中，常常會看到跑酷的元素，我們今天將在Unreal實做出跑酷小遊戲。就像下方示意圖，跳台將會在3個紅色點隨機生成，並且跳台生成後會開始移動，最後當玩家抵達終點時會播放特殊音效
 
-### 示意圖
 ![](https://i.imgur.com/KtC8CpD.png)
 
 ### 製作跳台
 首先第一步當然就是跳台的製作了，我們可以使用Unreal中的**Actor Blueprint**去實做出來
 
 <b>新增Actor Blueprint</b>
+
 Actor Blueprint是Unreal裡最常被使用的Blueprint之一，它可以被放置或生成在地圖之中，也可以新增一些子元件去做一些事件的控制
 
 Content Brower中右鍵 -> 選擇Blueprint Class -> 選擇Actor
@@ -72,7 +72,7 @@ Add Component -> 搜尋Cube後新增
 
 ![](https://i.imgur.com/52bNzNV.png)
 
-<b>建立Target Point陣列</b>
+<b>建立Target Point陣列</b><br>
 實現隨機生成最好的方式就是把所有的生成點存進一個**陣列**中，然後再使用**random**方法把陣列中的隨機一個生成點取出來
 
 ![](https://i.imgur.com/VhFxfR5.png)
@@ -96,7 +96,7 @@ Add Component -> 搜尋Cube後新增
 
 ![](https://i.imgur.com/37lXGAh.png)
 
-<b>循環生成</b>
+<b>循環生成</b><br>
 接下來是所有環節中最重要的一個步驟，我們要將生成跳台這個動作重複地進行，所以會使用到loop的概念，簡單來說就是重複執行不會結束。然後生成的物件選擇我們創建好的跳台，並且把隨機點的位置輸入，就大功告成了
 
 ![](https://i.imgur.com/EAR9j5Q.png)
@@ -136,7 +136,7 @@ Add Component -> 搜尋Cube後新增
 
 ![](https://i.imgur.com/M9wsffv.png)
 
-<b>建立觸發事件</b>
+<b>建立觸發事件</b><br>
 接下來我們增加一些條件設定，必須是玩家進入範圍時才會播放聲音，才可以避免系統的誤判(像是小動物跳進終點...等等)。這邊會使用到**Cast to**的概念，簡單來說就像是機場的檢疫門，如果身上沒有違禁品則可以安全通關。
 
 ![](https://i.imgur.com/e4iUwxF.png)
