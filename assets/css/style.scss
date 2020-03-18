@@ -126,11 +126,9 @@
 
 .flex{
   display:flex;
+  align-items:center;
+  justify-content:center;
   width:600px;
- 
-  background-color:#eee;
-}
 
-.flex div{
-  margin:auto;
+  background-color:#eee;
 }
