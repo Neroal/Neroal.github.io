@@ -3,10 +3,7 @@
 
 @import "theme";
 
-#main {
-  max-width: 600px;
-  margin: 0 auto; 
-}
+
 
 #menu {  
   position: fixed;
@@ -127,4 +124,13 @@
     }
 }
 
+.flex{
+  display:flex;
+  width:600px;
+ 
+  background-color:#eee;
+}
 
+.flex div{
+  margin:auto;
+}
