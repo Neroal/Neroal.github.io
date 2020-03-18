@@ -2,6 +2,10 @@
 ---
 
 @import "theme";
+#main {
+  width: 600px;
+  margin: 0 auto; 
+}
 
 #menu {  
   position: fixed;
@@ -122,8 +126,4 @@
     }
 }
 
-.section{
-	position: absolute;
-	left:50%;
-}
 
