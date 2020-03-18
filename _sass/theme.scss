@@ -225,6 +225,7 @@ header {
 
 .navbar {
 	position: absolute;	
+	top: 0;
 	right: 5vw;
 	a {
 		color: inherit;
@@ -232,8 +233,8 @@ header {
 	ul {
 		list-style-type: none;
 		li {
-			// background-color: #ff9f1c;
-			border: 1px solid #fff;
+			background-color: #fff;
+			border: 1px solid #30302f;
 			float: left;
 			// margin: 5px;
 			&:not(:first-child){
