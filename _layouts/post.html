@@ -14,19 +14,21 @@
   <main>
 
 	<div class="container">
-		<div>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- ad2 -->
-		<ins class="adsbygoogle"
-			 style="display:block"
-			 data-ad-client="ca-pub-8596113105925438"
-			 data-ad-slot="7451102421"
-			 data-ad-format="auto"
-			 data-full-width-responsive="true"></ins>
-		<script>
-			 (adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-		</div>		
+		{%- if site.url != "https://Neroal.github.io/about" -%}
+			<div>
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- ad2 -->
+			<ins class="adsbygoogle"
+				 style="display:block"
+				 data-ad-client="ca-pub-8596113105925438"
+				 data-ad-slot="7451102421"
+				 data-ad-format="auto"
+				 data-full-width-responsive="true"></ins>
+			<script>
+				 (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+			</div>
+		{%- endif -%}
 	  <div class="post-container">
 		  {{ content }}
 	  </div>
