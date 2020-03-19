@@ -13,7 +13,8 @@
 	</header>
 	<main>
 		<div class="container">			
-			<div>
+			{%- if site.url != "https://Neroal.github.io/about" -%}
+				<div>
 				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 				<!-- ad2 -->
 				<ins class="adsbygoogle"
@@ -25,7 +26,8 @@
 				<script>
 					 (adsbygoogle = window.adsbygoogle || []).push({});
 				</script>
-			</div>
+				</div>
+			{%- endif -%}
 			{{ content }}
 			<div>
 				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
