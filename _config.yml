@@ -1,7 +1,7 @@
-title: Neroal Programming
-author: GitHub User
+title: Neroal遊戲開發日常
+author: Neroal
 email: b0543019@ems.niu.edu.tw
-description: 測試
+description: 主要使用Unity和Unreal平台開發遊戲，會使用的語言有c#、c++、java、python，偶爾會上傳一些教學，希望能給予同在遊戲設計這條不歸路的同伴一些幫助
  
 show_excerpts: true # set to true to show excerpts on the homepage
 baseurl: "/"
