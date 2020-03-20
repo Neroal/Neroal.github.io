@@ -1,9 +1,11 @@
 上一篇我們學習到如何去控制球體，但是不會滾動的球感覺就少了些真實感。於是今天的教學日誌就此誕生
 
 ## 成果畫面
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/he8wEyJ0JHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/he8wEyJ0JHw" 
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
 ## 概念
 說到轉動，大家要先知道一個觀念，**移動速度**跟**角速度(轉動速度)** 是不相同的。我們看wiki給的定義
 
