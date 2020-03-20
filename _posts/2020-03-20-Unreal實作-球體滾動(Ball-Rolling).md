@@ -63,6 +63,8 @@
 
 ![](https://i.imgur.com/KG70brn.png)
 
+![](https://i.imgur.com/Or1JMaL.png)
+
 ### 轉動更新
 接著要開始處理轉動的部分，其實也就是把先前所提及的公式拿出來使用，並在轉動期間持續的增加轉動量。接著將結果傳遞到**SetWorldRotation**去改變角色的rotation。說難不難，說簡單也不簡單。初學者在公式轉換到Blueprint時會不知道該使用哪些節點，俗話說:「熟能生巧」，只要持續的練習就沒問題了!
 
@@ -86,7 +88,7 @@
 <div style="background-color:#FFEE99;">
 <b><font color="black"> TIPS</font></b>
 <br>
-<font color="black">請確認角色Blueprint ->Detail -> Shape中設定的半徑與半高相同，這樣才會是一個球體</b><br><br> </font>
+<font color="black">請確認角色Blueprint ->Detail -> Shape中設定的半徑與半高相同，這樣才會是一個球體<br><br> </font>
 
 </div>
 <br>

@@ -54,6 +54,8 @@ Viewport
 
 ![](https://i.imgur.com/hNpshpN.png)
 
+![](https://i.imgur.com/Or1JMaL.png)
+
 ### 移動、跳躍設定
 Unreal中可以設定特殊鍵來去觸發事件，你可以在Project Setting -> Input -> Bindings去做設定
 
