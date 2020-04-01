@@ -10,10 +10,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="mobile-web-app-capable" content="yes">
     <title>
-        Python TQC 301~310
+        Python TQC 401~410 - HackMD
     </title>
-    <link rel="icon" type="image/png" href="https://i.imgur.com/ktTaIFU.png">
-    <link rel="apple-touch-icon" href="https://i.imgur.com/ktTaIFU.png">
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -34,168 +34,252 @@
 </head>
 
 <body>
-    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true" style="position: relative;"><h1 id="Python-TQC-301310"><a class="anchor hidden-xs" href="#Python-TQC-301310" title="Python-TQC-301310"><span class="octicon octicon-link"></span></a>Python TQC 301~310</h1><h2 id="301-迴圈整數連加"><a class="anchor hidden-xs" href="#301-迴圈整數連加" title="301-迴圈整數連加"><span class="octicon octicon-link"></span></a>301 迴圈整數連加</h2><h3 id="說明"><a class="anchor hidden-xs" href="#說明" title="說明"><span class="octicon octicon-link"></span></a>說明:</h3><p>請使用迴圈敘述撰寫一程式，讓使用者輸入兩個正整數a、b（a &lt; b），利用迴圈計算從a開始連加到b的總和。例如：輸入a=1、b=100，則輸出結果為5050（1 + 2 + … + 100 = 5050）。</p><h3 id="輸入輸出"><a class="anchor hidden-xs" href="#輸入輸出" title="輸入輸出"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><div class="alert alert-success">
-<p>66<br>
-666</p>
-</div><p>範例輸出:</p><div class="alert alert-success">
-<p>219966</p>
-</div><h3 id="Code"><a class="anchor hidden-xs" href="#Code" title="Code"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs">a = eval(input())
-b = eval(input())
-summ=<span class="hljs-number">0</span>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true" style="position: relative;"><h1 id="Python-TQC-401410"><a class="anchor hidden-xs" href="#Python-TQC-401410" title="Python-TQC-401410"><span class="octicon octicon-link"></span></a>Python TQC 401~410</h1><h2 id="401-最小值"><a class="anchor hidden-xs" href="#401-最小值" title="401-最小值"><span class="octicon octicon-link"></span></a>401 最小值</h2><h3 id="說明"><a class="anchor hidden-xs" href="#說明" title="說明"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，由使用者輸入十個數字，然後找出其最小值，最後輸出最小值。</p><h3 id="輸入輸出"><a class="anchor hidden-xs" href="#輸入輸出" title="輸入輸出"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/hIOCXdA.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/r0FxYW0.png" alt=""></p><h3 id="Code"><a class="anchor hidden-xs" href="#Code" title="Code"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span></div><div class="code">num = []
 
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(a,b+<span class="hljs-number">1</span>):
-    summ+=i
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">10</span>):
+    num.append(eval(input()))
     
-print(summ)
-</code></pre><h2 id="302-迴圈偶數連加"><a class="anchor hidden-xs" href="#302-迴圈偶數連加" title="302-迴圈偶數連加"><span class="octicon octicon-link"></span></a>302 迴圈偶數連加</h2><h3 id="說明1"><a class="anchor hidden-xs" href="#說明1" title="說明1"><span class="octicon octicon-link"></span></a>說明:</h3><p>請使用迴圈敘述撰寫一程式，讓使用者輸入兩個正整數a、b（a &lt; b），利用迴圈計算從a開始的偶數連加到b的總和。例如：輸入a=1、b=100，則輸出結果為2550（2 + 4 + … + 100 = 2550）。</p><h3 id="輸入輸出1"><a class="anchor hidden-xs" href="#輸入輸出1" title="輸入輸出1"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><div class="alert alert-success">
-<p>14<br>
-1144</p>
-</div><p>範例輸出:</p><div class="alert alert-success">
-<p>327714</p>
-</div><h3 id="Code1"><a class="anchor hidden-xs" href="#Code1" title="Code1"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs">a = eval(input())
+print(min(num))
+</div></div></code></pre><h2 id="402-不定數迴圈-最小值"><a class="anchor hidden-xs" href="#402-不定數迴圈-最小值" title="402-不定數迴圈-最小值"><span class="octicon octicon-link"></span></a>402 不定數迴圈-最小值</h2><h3 id="說明1"><a class="anchor hidden-xs" href="#說明1" title="說明1"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入數字，輸入的動作直到輸入值為9999才結束，然後找出其最小值，並輸出最小值。</p><h3 id="輸入輸出1"><a class="anchor hidden-xs" href="#輸入輸出1" title="輸入輸出1"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/ODGRGPC.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/xrCfaFy.png" alt=""></p><h3 id="Code1"><a class="anchor hidden-xs" href="#Code1" title="Code1"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span></div><div class="code">LIST = []
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+        value = eval(input())
+        <span class="hljs-keyword">if</span> value == <span class="hljs-number">9999</span>:
+            <span class="hljs-keyword">break</span>
+        LIST.append(value)
+print(min(LIST))
+</div></div></code></pre><h2 id="403-倍數總和計算"><a class="anchor hidden-xs" href="#403-倍數總和計算" title="403-倍數總和計算"><span class="octicon octicon-link"></span></a>403 倍數總和計算</h2><h3 id="說明2"><a class="anchor hidden-xs" href="#說明2" title="說明2"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入兩個正整數a、b（a&lt;=b），輸出從a到b（包含a和b）之間4或9的倍數（一列輸出十個數字、欄寬為4、靠左對齊）以及倍數之個數、總和。</p><h3 id="輸入輸出2"><a class="anchor hidden-xs" href="#輸入輸出2" title="輸入輸出2"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/FVp9i6g.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/0MnGZ5K.png" alt=""></p><h3 id="Code2"><a class="anchor hidden-xs" href="#Code2" title="Code2"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span></div><div class="code">a = eval(input())
 b = eval(input())
-summ=<span class="hljs-number">0</span>
-
+newline=<span class="hljs-number">1</span>
+totalsum=<span class="hljs-number">0</span>
 <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(a,b+<span class="hljs-number">1</span>):
-    <span class="hljs-keyword">if</span> i%<span class="hljs-number">2</span>==<span class="hljs-number">0</span>:
-        summ+=i
+    <span class="hljs-keyword">if</span> (i%<span class="hljs-number">4</span>==<span class="hljs-number">0</span> <span class="hljs-keyword">or</span> i%<span class="hljs-number">9</span>==<span class="hljs-number">0</span>)<span class="hljs-keyword">and</span> newline!=<span class="hljs-number">10</span>:
+        print(<span class="hljs-string">'%-4d'</span>%i,end=<span class="hljs-string">''</span>)
+        newline+=<span class="hljs-number">1</span>
+        totalsum+=i
+    <span class="hljs-keyword">elif</span> i%<span class="hljs-number">4</span>==<span class="hljs-number">0</span> <span class="hljs-keyword">or</span> i%<span class="hljs-number">9</span>==<span class="hljs-number">0</span>:
+        print(<span class="hljs-string">'%-4d'</span>%i)
+        newline+=<span class="hljs-number">1</span>
+        totalsum+=i
+print(<span class="hljs-string">'\n%d'</span>%(newline<span class="hljs-number">-1</span>))    
+print(totalsum) 
+</div></div></code></pre><h2 id="404-數字反轉判斷"><a class="anchor hidden-xs" href="#404-數字反轉判斷" title="404-數字反轉判斷"><span class="octicon octicon-link"></span></a>404 數字反轉判斷</h2><h3 id="說明3"><a class="anchor hidden-xs" href="#說明3" title="說明3"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入一個正整數，將此正整數以反轉的順序輸出，並判斷如輸入0，則輸出為0。</p><h3 id="輸入輸出3"><a class="anchor hidden-xs" href="#輸入輸出3" title="輸入輸出3"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/SOAPE2i.png" alt=""></p><p><img src="https://i.imgur.com/E3eOlGM.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/FS7tQOS.png" alt=""></p><p><img src="https://i.imgur.com/E3eOlGM.png" alt=""></p><h3 id="Code3"><a class="anchor hidden-xs" href="#Code3" title="Code3"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span></div><div class="code">num = eval(input())
 
-print(summ)
-</code></pre><h2 id="303-迴圈數值相乘"><a class="anchor hidden-xs" href="#303-迴圈數值相乘" title="303-迴圈數值相乘"><span class="octicon octicon-link"></span></a>303 迴圈數值相乘</h2><h3 id="說明2"><a class="anchor hidden-xs" href="#說明2" title="說明2"><span class="octicon octicon-link"></span></a>說明:</h3><p>請使用迴圈敘述撰寫一程式，讓使用者輸入一個正整數（&lt;100），然後以三角形的方式依序輸出此數的相乘結果。</p><blockquote>
-<p>輸出欄寬為4，且需靠右對齊</p>
-</blockquote><h3 id="輸入輸出2"><a class="anchor hidden-xs" href="#輸入輸出2" title="輸入輸出2"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><div class="alert alert-success">
-<p>3</p>
-</div><div class="alert alert-success">
-<p>5</p>
-</div><p>範例輸出:</p><div class="alert alert-success">
-<p>1<br>
-2   4<br>
-3   6   9</p>
-</div><div class="alert alert-success">
-<p>1<br>
-2   4<br>
-3   6   9<br>
-4   8  12  16<br>
-5  10  15  20  25</p>
-</div><h3 id="Code2"><a class="anchor hidden-xs" href="#Code2" title="Code2"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs">num = eval(input())
-
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,num+<span class="hljs-number">1</span>):   
-   <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,i+<span class="hljs-number">1</span>):
-       print(<span class="hljs-string">'%4d'</span>%(i*j),end=<span class="hljs-string">''</span>)
-   print()
-</code></pre><h2 id="304-迴圈倍數總和"><a class="anchor hidden-xs" href="#304-迴圈倍數總和" title="304-迴圈倍數總和"><span class="octicon octicon-link"></span></a>304 迴圈倍數總和</h2><h3 id="說明3"><a class="anchor hidden-xs" href="#說明3" title="說明3"><span class="octicon octicon-link"></span></a>說明:</h3><p>請使用迴圈敘述撰寫一程式，讓使用者輸入一個正整數a，利用迴圈計算從1到a之間，所有5之倍數數字總和。</p><h3 id="輸入輸出3"><a class="anchor hidden-xs" href="#輸入輸出3" title="輸入輸出3"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><div class="alert alert-success">
-<p>21</p>
-</div><p>範例輸出:</p><div class="alert alert-success">
-<p>50</p>
-</div><h3 id="Code3"><a class="anchor hidden-xs" href="#Code3" title="Code3"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs">a = eval(input())
-summ=<span class="hljs-number">0</span>
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,a+<span class="hljs-number">1</span>):
-    <span class="hljs-keyword">if</span> i%<span class="hljs-number">5</span>==<span class="hljs-number">0</span>:
-        summ+=i
-print(summ)
-</code></pre><h2 id="305-數字反轉"><a class="anchor hidden-xs" href="#305-數字反轉" title="305-數字反轉"><span class="octicon octicon-link"></span></a>305 數字反轉</h2><h3 id="說明4"><a class="anchor hidden-xs" href="#說明4" title="說明4"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入一個正整數，將此數值以反轉的順序輸出。</p><h3 id="輸入輸出4"><a class="anchor hidden-xs" href="#輸入輸出4" title="輸入輸出4"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><div class="alert alert-success">
-<p>123456</p>
-</div><p>範例輸出:</p><div class="alert alert-success">
-<p>654321</p>
-</div><h3 id="Code4"><a class="anchor hidden-xs" href="#Code4" title="Code4"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs">num = eval(input())
-
-<span class="hljs-keyword">while</span> num!=<span class="hljs-number">0</span>:
-    print(num%<span class="hljs-number">10</span>,end=<span class="hljs-string">''</span>)
-    num//=<span class="hljs-number">10</span>
-</code></pre><h2 id="306-迴圈階乘計算"><a class="anchor hidden-xs" href="#306-迴圈階乘計算" title="306-迴圈階乘計算"><span class="octicon octicon-link"></span></a>306 迴圈階乘計算</h2><h3 id="說明5"><a class="anchor hidden-xs" href="#說明5" title="說明5"><span class="octicon octicon-link"></span></a>說明:</h3><p>請使用迴圈敘述撰寫一程式，讓使用者輸入一個正整數n，利用迴圈計算並輸出n!的值。</p><h3 id="輸入輸出5"><a class="anchor hidden-xs" href="#輸入輸出5" title="輸入輸出5"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><div class="alert alert-success">
-<p>15</p>
-</div><p>範例輸出:</p><div class="alert alert-success">
-<p>1307674368000</p>
-</div><h3 id="Code5"><a class="anchor hidden-xs" href="#Code5" title="Code5"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs">n = eval(input())
-ans =<span class="hljs-number">1</span>
-
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,n+<span class="hljs-number">1</span>):
-    ans*=i
-
-print(ans)
-</code></pre><h2 id="307-乘法表"><a class="anchor hidden-xs" href="#307-乘法表" title="307-乘法表"><span class="octicon octicon-link"></span></a>307 乘法表</h2><h3 id="說明6"><a class="anchor hidden-xs" href="#說明6" title="說明6"><span class="octicon octicon-link"></span></a>說明:</h3><ol>
-<li>請使用迴圈敘述撰寫一程式，要求使用者輸入一個正整數n（n&lt;10），顯示n*n乘法表。</li>
-<li>每項運算式需進行格式化排列整齊，每個運算子及運算元輸出的欄寬為2，而每項乘積輸出的欄寬為4，皆靠左對齊不跳行。</li>
-</ol><h3 id="輸入輸出6"><a class="anchor hidden-xs" href="#輸入輸出6" title="輸入輸出6"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><div class="alert alert-success">
-<p>3</p>
-</div><p>範例輸出:</p><div class="alert alert-success">
-<p>1 * 1 = 1     2 * 1 = 2     3 * 1 = 3<br>
-1 * 2 = 2     2 * 2 = 4     3 * 2 = 6<br>
-1 * 3 = 3     2 * 3 = 6     3 * 3 = 9</p>
-</div><h3 id="Code6"><a class="anchor hidden-xs" href="#Code6" title="Code6"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs">n = eval(input())
-
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,n+<span class="hljs-number">1</span>):
-    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,n+<span class="hljs-number">1</span>):
-        print(<span class="hljs-string">'%-2d%-2c%-2d%-2c%-4d'</span>%(j,<span class="hljs-string">'*'</span>,i,<span class="hljs-string">'='</span>,(j*i)),end=<span class="hljs-string">''</span>)
-    print()
-</code></pre><h2 id="308-迴圈位數加總"><a class="anchor hidden-xs" href="#308-迴圈位數加總" title="308-迴圈位數加總"><span class="octicon octicon-link"></span></a>308 迴圈位數加總</h2><h3 id="說明7"><a class="anchor hidden-xs" href="#說明7" title="說明7"><span class="octicon octicon-link"></span></a>說明:</h3><p>請使用迴圈敘述撰寫一程式，要求使用者輸入一個數字，此數字代表後面測試資料的數量。每一筆測試資料是一個正整數（由使用者輸入），將此正整數的每位數全部加總起來。</p><h3 id="輸入輸出7"><a class="anchor hidden-xs" href="#輸入輸出7" title="輸入輸出7"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入/輸出:</p><div class="alert alert-success">
-<p>2</p>
-<p>13579<br>
-Sum of all digits of 13579 is 25</p>
-<p>2468<br>
-Sum of all digits of 2468 is 20</p>
-</div><h3 id="Code7"><a class="anchor hidden-xs" href="#Code7" title="Code7"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs">datatotalcount = eval(input())
-i=<span class="hljs-number">0</span>
-<span class="hljs-keyword">while</span> i!=datatotalcount:
-    num = eval(input())
-    temp = num
-    summ=<span class="hljs-number">0</span>
-    <span class="hljs-keyword">while</span> num!=<span class="hljs-number">0</span>:
-        summ+= num%<span class="hljs-number">10</span>
+<span class="hljs-keyword">if</span> num == <span class="hljs-number">0</span>:
+    print(<span class="hljs-number">0</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-keyword">while</span>(num!=<span class="hljs-number">0</span>):
+        print(<span class="hljs-string">'%d'</span>%(num%<span class="hljs-number">10</span>),end=<span class="hljs-string">''</span>)
         num//=<span class="hljs-number">10</span>
-   
-    print(<span class="hljs-string">'Sum of all digits of %d is %d'</span>%(temp,summ))
-    i+=<span class="hljs-number">1</span>
-</code></pre><h2 id="309-存款總額"><a class="anchor hidden-xs" href="#309-存款總額" title="309-存款總額"><span class="octicon octicon-link"></span></a>309 存款總額</h2><h3 id="說明8"><a class="anchor hidden-xs" href="#說明8" title="說明8"><span class="octicon octicon-link"></span></a>說明:</h3><p>請使用迴圈敘述撰寫一程式，提示使用者輸入金額（如10,000）、年收益率（如5.75），以及經過的月份數（如5），接著顯示每個月的存款總額。</p><blockquote>
-<p>四捨五入，輸出浮點數到小數點後第二位</p>
+</div></div></code></pre><h2 id="405-不定數迴圈-分數等級"><a class="anchor hidden-xs" href="#405-不定數迴圈-分數等級" title="405-不定數迴圈-分數等級"><span class="octicon octicon-link"></span></a>405 不定數迴圈-分數等級</h2><h3 id="說明4"><a class="anchor hidden-xs" href="#說明4" title="說明4"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，以不定數迴圈的方式輸入一個正整數（代表分數），之後根據以下分數與GPA的對照表，印出其所對應的GPA。假設此不定數迴圈輸入9999則會結束此迴圈。標準如下表所示：</p><p><img src="https://i.imgur.com/jrGKUY1.png" alt=""></p><h3 id="輸入輸出4"><a class="anchor hidden-xs" href="#輸入輸出4" title="輸入輸出4"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入/輸出:</p><p><img src="https://i.imgur.com/df0D6n7.png" alt=""></p><h3 id="Code4"><a class="anchor hidden-xs" href="#Code4" title="Code4"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span></div><div class="code">num = eval(input())
+
+<span class="hljs-keyword">while</span> num!=<span class="hljs-number">9999</span>:
+    <span class="hljs-keyword">if</span> <span class="hljs-number">90</span>&lt;= num &lt;=<span class="hljs-number">100</span>:
+        print(<span class="hljs-string">'A'</span>)
+    <span class="hljs-keyword">elif</span> <span class="hljs-number">80</span> &lt;= num &lt;=<span class="hljs-number">89</span>:
+        print(<span class="hljs-string">'B'</span>)
+    <span class="hljs-keyword">elif</span> <span class="hljs-number">70</span> &lt;= num &lt;=<span class="hljs-number">79</span>:
+        print(<span class="hljs-string">'C'</span>)
+    <span class="hljs-keyword">elif</span> <span class="hljs-number">60</span> &lt;= num &lt;=<span class="hljs-number">69</span>:
+        print(<span class="hljs-string">'D'</span>)
+    <span class="hljs-keyword">elif</span> <span class="hljs-number">0</span> &lt;= num &lt;=<span class="hljs-number">59</span>:
+        print(<span class="hljs-string">'E'</span>)
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">'Error!'</span>)
+    num = eval(input())
+</div></div></code></pre><h2 id="406-不定數迴圈-BMI計算"><a class="anchor hidden-xs" href="#406-不定數迴圈-BMI計算" title="406-不定數迴圈-BMI計算"><span class="octicon octicon-link"></span></a>406 不定數迴圈-BMI計算</h2><h3 id="說明5"><a class="anchor hidden-xs" href="#說明5" title="說明5"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，以不定數迴圈的方式輸入身高與體重，計算出BMI之後再根據以下對照表，印出BMI及相對應的BMI代表意義（State）。假設此不定數迴圈輸入-9999則會結束此迴圈。</p><blockquote>
+<p>輸出浮點數到小數點後第二位。</p>
 </blockquote><blockquote>
-<p>假設您存款$10,000，年收益為5.75%。<br>
-過了一個月，存款會是：10000 + 10000 * 5.75 / 1200 = 10047.92<br>
-過了兩個月，存款會是：10047.92 + 10047.92 * 5.75 / 1200 = 10096.06<br>
-過了三個月，存款將是：10096.06 + 10096.06 * 5.75 / 1200 = 10144.44</p>
-</blockquote><h3 id="輸入輸出8"><a class="anchor hidden-xs" href="#輸入輸出8" title="輸入輸出8"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><div class="alert alert-success">
-<p>50000</p>
-<p>1.3</p>
-<p>5</p>
-</div><p>範例輸出:</p><div class="alert alert-success">
-<p>Month   Amount<br>
-1       50054.17<br>
-2       50108.39<br>
-3       50162.68<br>
-4       50217.02<br>
-5       50271.42</p>
-</div><h3 id="Code8"><a class="anchor hidden-xs" href="#Code8" title="Code8"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs">amount = eval(input())
-rate = eval(input())
-period = eval(input())
+<p><img src="https://i.imgur.com/eeVUN8w.png" alt=""></p>
+</blockquote><blockquote>
+<p>標準如下表所示：</p>
+</blockquote><p><img src="https://i.imgur.com/NwLlHYk.png" alt=""></p><h3 id="輸入輸出5"><a class="anchor hidden-xs" href="#輸入輸出5" title="輸入輸出5"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入/輸出:</p><p><img src="https://i.imgur.com/3aJSIsv.png" alt=""></p><h3 id="Code5"><a class="anchor hidden-xs" href="#Code5" title="Code5"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span></div><div class="code">height = eval(input())
 
-<span class="hljs-comment">#change to percent</span>
-rate/=<span class="hljs-number">100</span>
+<span class="hljs-keyword">while</span> height != <span class="hljs-number">-9999</span>:
+    weight = eval(input())
+    <span class="hljs-keyword">if</span> weight != <span class="hljs-number">-9999</span>:
+        bmi = weight/(pow(height/<span class="hljs-number">100</span>,<span class="hljs-number">2</span>))
+        print(<span class="hljs-string">'BMI:%.2f'</span>%bmi)
+        <span class="hljs-keyword">if</span> bmi &lt; <span class="hljs-number">18.5</span>:
+            print(<span class="hljs-string">'State:under weight'</span>)
+        <span class="hljs-keyword">elif</span> <span class="hljs-number">18.5</span> &lt;= bmi &lt;<span class="hljs-number">25</span>:
+            print(<span class="hljs-string">'State:normal'</span>)
+        <span class="hljs-keyword">elif</span> <span class="hljs-number">25</span> &lt;= bmi &lt;<span class="hljs-number">30</span>:
+            print(<span class="hljs-string">'State:over weight'</span>)
+        <span class="hljs-keyword">elif</span> <span class="hljs-number">30</span> &lt;= bmi:
+            print(<span class="hljs-string">'State:fat'</span>)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">break</span>
+    height = eval(input())
+</div></div></code></pre><h2 id="407-不定數迴圈-閏年判斷"><a class="anchor hidden-xs" href="#407-不定數迴圈-閏年判斷" title="407-不定數迴圈-閏年判斷"><span class="octicon octicon-link"></span></a>407 不定數迴圈-閏年判斷</h2><h3 id="說明6"><a class="anchor hidden-xs" href="#說明6" title="說明6"><span class="octicon octicon-link"></span></a>說明:</h3><ol>
+<li>請撰寫一程式，以不定數迴圈的方式讓使用者輸入西元年份，然後判斷它是否為閏年（leap year）或平年。其判斷規則如下：每四年一閏，每百年不閏，但每四百年也一閏。</li>
+<li>假設此不定數迴圈輸入-9999則會結束此迴圈。</li>
+</ol><h3 id="輸入輸出6"><a class="anchor hidden-xs" href="#輸入輸出6" title="輸入輸出6"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入/輸出:</p><p><img src="https://i.imgur.com/NGGhqPX.png" alt=""></p><h3 id="Code6"><a class="anchor hidden-xs" href="#Code6" title="Code6"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span></div><div class="code">year = eval(input())
 
-print(<span class="hljs-string">'%s\t%s'</span>%(<span class="hljs-string">'Month'</span>,<span class="hljs-string">'Amount'</span>))
-<span class="hljs-keyword">for</span> month <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,period+<span class="hljs-number">1</span>):
-    total = amount + (amount*(rate/<span class="hljs-number">12</span>))
-    print(<span class="hljs-string">'%d\t%.2f'</span>%(month,total))
-    amount = total
-</code></pre><h2 id="310-迴圈公式計算"><a class="anchor hidden-xs" href="#310-迴圈公式計算" title="310-迴圈公式計算"><span class="octicon octicon-link"></span></a>310 迴圈公式計算</h2><h3 id="說明9"><a class="anchor hidden-xs" href="#說明9" title="說明9"><span class="octicon octicon-link"></span></a>說明:</h3><p>請使用迴圈敘述撰寫一程式，讓使用者輸入正整數n(1 &lt; n)，計算以下公式的總和並顯示結果：</p><p><img src="https://i.imgur.com/7GhuS3t.png" alt=""></p><blockquote>
-<p>輸出結果至小數點後四位</p>
-</blockquote><h3 id="輸入輸出9"><a class="anchor hidden-xs" href="#輸入輸出9" title="輸入輸出9"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><div class="alert alert-success">
-<p>8</p>
-</div><p>範例輸出:</p><div class="alert alert-success">
-<p>1.8284</p>
-</div><h3 id="Code9"><a class="anchor hidden-xs" href="#Code9" title="Code9"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs">n = eval(input())
-ans=<span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> year!=<span class="hljs-number">-9999</span>:
+    <span class="hljs-keyword">if</span> year%<span class="hljs-number">400</span>==<span class="hljs-number">0</span>:
+        print(<span class="hljs-string">'%d is a leap year.'</span>%year)
+    <span class="hljs-keyword">elif</span> year%<span class="hljs-number">100</span>==<span class="hljs-number">0</span>:
+        print(<span class="hljs-string">'%d is not a leap year.'</span>%year)
+    <span class="hljs-keyword">elif</span> year%<span class="hljs-number">4</span>==<span class="hljs-number">0</span>:
+        print(<span class="hljs-string">'%d is a leap year.'</span>%year)
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">'%d is not a leap year.'</span>%year)
+    year = eval(input())
+</div></div></code></pre><h2 id="408-奇偶數個數計算"><a class="anchor hidden-xs" href="#408-奇偶數個數計算" title="408-奇偶數個數計算"><span class="octicon octicon-link"></span></a>408 奇偶數個數計算</h2><h3 id="說明7"><a class="anchor hidden-xs" href="#說明7" title="說明7"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入十個整數，計算並輸出偶數和奇數的個數。</p><h3 id="輸入輸出7"><a class="anchor hidden-xs" href="#輸入輸出7" title="輸入輸出7"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/oXY6VMY.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/vtjGH8Z.png" alt=""></p><h3 id="Code7"><a class="anchor hidden-xs" href="#Code7" title="Code7"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span></div><div class="code">oddcount=<span class="hljs-number">0</span>
+evencount=<span class="hljs-number">0</span>
 
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,n):
-    ans+=(<span class="hljs-number">1</span>/(pow(i,<span class="hljs-number">0.5</span>)+pow(i+<span class="hljs-number">1</span>,<span class="hljs-number">0.5</span>)))
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">10</span>):
+    num = eval(input())
+    <span class="hljs-keyword">if</span> num%<span class="hljs-number">2</span>==<span class="hljs-number">0</span>:
+        evencount+=<span class="hljs-number">1</span>
+    <span class="hljs-keyword">else</span>:
+        oddcount+=<span class="hljs-number">1</span>
+print(<span class="hljs-string">'Even numbers: %d'</span>%evencount)
+print(<span class="hljs-string">'Odd numbers: %d'</span>%oddcount)
+</div></div></code></pre><h2 id="409-得票數計算"><a class="anchor hidden-xs" href="#409-得票數計算" title="409-得票數計算"><span class="octicon octicon-link"></span></a>409 得票數計算</h2><h3 id="說明8"><a class="anchor hidden-xs" href="#說明8" title="說明8"><span class="octicon octicon-link"></span></a>說明:</h3><p>某次選舉有兩位候選人，分別是No.1: Nami、No.2:Chopper。請撰寫一程式，輸入五張選票，輸入值如為1即表示針對1號候選人投票；輸入值如為2即表示針對2號候選人投票，如輸入其他值則視為廢票。每次投完後需印出目前每位候選人的得票數，最後印出最高票者為當選人；如最終計算有相同的最高票數者或無法選出最高票者，顯示【=&gt; No one wonthe election.】。</p><h3 id="輸入輸出8"><a class="anchor hidden-xs" href="#輸入輸出8" title="輸入輸出8"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入/輸出:</p><p><img src="https://i.imgur.com/0REanli.png" alt=""></p><h3 id="Code8"><a class="anchor hidden-xs" href="#Code8" title="Code8"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span></div><div class="code">vote1 = vote2 = votenull = <span class="hljs-number">0</span>
 
-print(<span class="hljs-string">'%.4f'</span>%ans)   
-</code></pre><hr><p>相關文章:<br>
-	<a href="https://neroal.nctu.me/posts/TQC-%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80Python(401~410)/" 
-	target="_blank" rel="noopener">Python TQC 201~210</a>
-	<br>
-	
-</p><h6 id="tags-python"><a class="anchor hidden-xs" href="#tags-python" title="tags-python">
-<span class="octicon octicon-link"></span></a>tags: <code>python</code></h6></div>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
+    vote = eval(input())
+    <span class="hljs-keyword">if</span> vote == <span class="hljs-number">1</span>:
+        vote1+=<span class="hljs-number">1</span>        
+    <span class="hljs-keyword">elif</span> vote == <span class="hljs-number">2</span>:
+        vote2+=<span class="hljs-number">1</span>
+    <span class="hljs-keyword">else</span>:
+        votenull+=<span class="hljs-number">1</span>
+    print(<span class="hljs-string">'Total votes of NO.1:Nami = %d'</span>%vote1)
+    print(<span class="hljs-string">'Total votes of NO.2:Chopper = %d'</span>%vote2)
+    print(<span class="hljs-string">'Total null votes = %d'</span>%votenull)
+
+<span class="hljs-keyword">if</span> vote1 &gt; vote2:
+    print(<span class="hljs-string">'No.1 Nami won the election.'</span>)
+<span class="hljs-keyword">elif</span> vote2 &gt; vote1:
+    print(<span class="hljs-string">'No.2 Chopper won the election.'</span>)
+<span class="hljs-keyword">else</span>:
+     print(<span class="hljs-string">'No one won the election.'</span>)
+
+</div></div></code></pre><h2 id="410-繪製等腰三角形"><a class="anchor hidden-xs" href="#410-繪製等腰三角形" title="410-繪製等腰三角形"><span class="octicon octicon-link"></span></a>410 繪製等腰三角形</h2><h3 id="說明9"><a class="anchor hidden-xs" href="#說明9" title="說明9"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，依照使用者輸入的n，畫出對應的等腰三角形。</p><h3 id="輸入輸出9"><a class="anchor hidden-xs" href="#輸入輸出9" title="輸入輸出9"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/3wCDRqC.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/EKmyAJh.png" alt=""></p><h3 id="Code9"><a class="anchor hidden-xs" href="#Code9" title="Code9"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span></div><div class="code">n = eval(input())
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,n+<span class="hljs-number">1</span>):
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>,n-i):
+        print(<span class="hljs-string">' '</span>,end=<span class="hljs-string">''</span>)
+    <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> range((<span class="hljs-number">2</span>*i)<span class="hljs-number">-1</span>):
+        print(<span class="hljs-string">'*'</span>,end=<span class="hljs-string">''</span>)
+    print()
+</div></div></code></pre><hr><p>相關文章:</p><h6 id="tags-python"><a class="anchor hidden-xs" href="#tags-python" title="tags-python"><span class="octicon octicon-link"></span></a>tags: <code>python</code></h6></div>
     <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
         <div class="pull-right dropdown">
             <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
@@ -203,64 +287,64 @@ print(<span class="hljs-string">'%.4f'</span>%ans)
             </a>
             <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
                 <div class="toc"><ul class="nav">
-<li class=""><a href="#Python-TQC-301310" title="Python TQC 301~310">Python TQC 301~310</a><ul class="nav">
-<li><a href="#301-迴圈整數連加" title="301 迴圈整數連加">301 迴圈整數連加</a><ul class="nav">
+<li class=""><a href="#Python-TQC-401410" title="Python TQC 401~410">Python TQC 401~410</a><ul class="nav">
+<li><a href="#401-最小值" title="401 最小值">401 最小值</a><ul class="nav">
 <li><a href="#說明" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#302-迴圈偶數連加" title="302 迴圈偶數連加">302 迴圈偶數連加</a><ul class="nav">
+<li><a href="#402-不定數迴圈-最小值" title="402 不定數迴圈-最小值">402 不定數迴圈-最小值</a><ul class="nav">
 <li><a href="#說明1" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出1" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code1" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#303-迴圈數值相乘" title="303 迴圈數值相乘">303 迴圈數值相乘</a><ul class="nav">
+<li><a href="#403-倍數總和計算" title="403 倍數總和計算">403 倍數總和計算</a><ul class="nav">
 <li><a href="#說明2" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出2" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code2" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#304-迴圈倍數總和" title="304 迴圈倍數總和">304 迴圈倍數總和</a><ul class="nav">
+<li><a href="#404-數字反轉判斷" title="404 數字反轉判斷">404 數字反轉判斷</a><ul class="nav">
 <li><a href="#說明3" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出3" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code3" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#305-數字反轉" title="305 數字反轉">305 數字反轉</a><ul class="nav">
+<li><a href="#405-不定數迴圈-分數等級" title="405 不定數迴圈-分數等級">405 不定數迴圈-分數等級</a><ul class="nav">
 <li><a href="#說明4" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出4" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code4" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#306-迴圈階乘計算" title="306 迴圈階乘計算">306 迴圈階乘計算</a><ul class="nav">
+<li><a href="#406-不定數迴圈-BMI計算" title="406 不定數迴圈-BMI計算">406 不定數迴圈-BMI計算</a><ul class="nav">
 <li><a href="#說明5" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出5" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code5" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#307-乘法表" title="307 乘法表">307 乘法表</a><ul class="nav">
+<li><a href="#407-不定數迴圈-閏年判斷" title="407 不定數迴圈-閏年判斷">407 不定數迴圈-閏年判斷</a><ul class="nav">
 <li><a href="#說明6" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出6" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code6" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#308-迴圈位數加總" title="308 迴圈位數加總">308 迴圈位數加總</a><ul class="nav">
+<li><a href="#408-奇偶數個數計算" title="408 奇偶數個數計算">408 奇偶數個數計算</a><ul class="nav">
 <li><a href="#說明7" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出7" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code7" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#309-存款總額" title="309 存款總額">309 存款總額</a><ul class="nav">
+<li><a href="#409-得票數計算" title="409 得票數計算">409 得票數計算</a><ul class="nav">
 <li><a href="#說明8" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出8" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code8" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li class=""><a href="#310-迴圈公式計算" title="310 迴圈公式計算">310 迴圈公式計算</a><ul class="nav">
+<li><a href="#410-繪製等腰三角形" title="410 繪製等腰三角形">410 繪製等腰三角形</a><ul class="nav">
 <li><a href="#說明9" title="說明:">說明:</a></li>
-<li class=""><a href="#輸入輸出9" title="輸入/輸出">輸入/輸出</a></li>
+<li><a href="#輸入輸出9" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code9" title="Code:">Code:</a></li>
 </ul>
 </li>
@@ -273,64 +357,64 @@ print(<span class="hljs-string">'%.4f'</span>%ans)
     </div>
     <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
         <div class="toc"><ul class="nav">
-<li class=""><a href="#Python-TQC-301310" title="Python TQC 301~310">Python TQC 301~310</a><ul class="nav">
-<li><a href="#301-迴圈整數連加" title="301 迴圈整數連加">301 迴圈整數連加</a><ul class="nav">
+<li class=""><a href="#Python-TQC-401410" title="Python TQC 401~410">Python TQC 401~410</a><ul class="nav">
+<li><a href="#401-最小值" title="401 最小值">401 最小值</a><ul class="nav">
 <li><a href="#說明" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#302-迴圈偶數連加" title="302 迴圈偶數連加">302 迴圈偶數連加</a><ul class="nav">
+<li><a href="#402-不定數迴圈-最小值" title="402 不定數迴圈-最小值">402 不定數迴圈-最小值</a><ul class="nav">
 <li><a href="#說明1" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出1" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code1" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#303-迴圈數值相乘" title="303 迴圈數值相乘">303 迴圈數值相乘</a><ul class="nav">
+<li><a href="#403-倍數總和計算" title="403 倍數總和計算">403 倍數總和計算</a><ul class="nav">
 <li><a href="#說明2" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出2" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code2" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#304-迴圈倍數總和" title="304 迴圈倍數總和">304 迴圈倍數總和</a><ul class="nav">
+<li><a href="#404-數字反轉判斷" title="404 數字反轉判斷">404 數字反轉判斷</a><ul class="nav">
 <li><a href="#說明3" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出3" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code3" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#305-數字反轉" title="305 數字反轉">305 數字反轉</a><ul class="nav">
+<li><a href="#405-不定數迴圈-分數等級" title="405 不定數迴圈-分數等級">405 不定數迴圈-分數等級</a><ul class="nav">
 <li><a href="#說明4" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出4" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code4" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#306-迴圈階乘計算" title="306 迴圈階乘計算">306 迴圈階乘計算</a><ul class="nav">
+<li><a href="#406-不定數迴圈-BMI計算" title="406 不定數迴圈-BMI計算">406 不定數迴圈-BMI計算</a><ul class="nav">
 <li><a href="#說明5" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出5" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code5" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#307-乘法表" title="307 乘法表">307 乘法表</a><ul class="nav">
+<li><a href="#407-不定數迴圈-閏年判斷" title="407 不定數迴圈-閏年判斷">407 不定數迴圈-閏年判斷</a><ul class="nav">
 <li><a href="#說明6" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出6" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code6" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#308-迴圈位數加總" title="308 迴圈位數加總">308 迴圈位數加總</a><ul class="nav">
+<li><a href="#408-奇偶數個數計算" title="408 奇偶數個數計算">408 奇偶數個數計算</a><ul class="nav">
 <li><a href="#說明7" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出7" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code7" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#309-存款總額" title="309 存款總額">309 存款總額</a><ul class="nav">
+<li><a href="#409-得票數計算" title="409 得票數計算">409 得票數計算</a><ul class="nav">
 <li><a href="#說明8" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出8" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code8" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li class=""><a href="#310-迴圈公式計算" title="310 迴圈公式計算">310 迴圈公式計算</a><ul class="nav">
+<li><a href="#410-繪製等腰三角形" title="410 繪製等腰三角形">410 繪製等腰三角形</a><ul class="nav">
 <li><a href="#說明9" title="說明:">說明:</a></li>
-<li class=""><a href="#輸入輸出9" title="輸入/輸出">輸入/輸出</a></li>
+<li><a href="#輸入輸出9" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code9" title="Code:">Code:</a></li>
 </ul>
 </li>
