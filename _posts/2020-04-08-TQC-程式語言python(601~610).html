@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="mobile-web-app-capable" content="yes">
     <title>
-        Python TQC 501~510 - HackMD
+        Python TQC 601~610 - HackMD
     </title>
     <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
     <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
@@ -34,90 +34,9 @@
 </head>
 
 <body>
-    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true" style="position: relative;"><h1 id="Python-TQC-501510"><a class="anchor hidden-xs" href="#Python-TQC-501510" title="Python-TQC-501510"><span class="octicon octicon-link"></span></a>Python TQC 501~510</h1><h2 id="501-訊息顯示"><a class="anchor hidden-xs" href="#501-訊息顯示" title="501-訊息顯示"><span class="octicon octicon-link"></span></a>501 訊息顯示</h2><h3 id="說明"><a class="anchor hidden-xs" href="#說明" title="說明"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，呼叫函式compute()，該函式功能為讓使用者輸入系別（Department）、學號（StudentID）和姓名（Name）並顯示這些訊息。</p><h3 id="輸入輸出"><a class="anchor hidden-xs" href="#輸入輸出" title="輸入輸出"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/r4bI7Tb.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/kSApL7j.png" alt=""></p><h3 id="Code"><a class="anchor hidden-xs" href="#Code" title="Code"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
-<span data-linenumber="2"></span>
-<span data-linenumber="3"></span>
-<span data-linenumber="4"></span>
-<span data-linenumber="5"></span>
-<span data-linenumber="6"></span>
-<span data-linenumber="7"></span>
-<span data-linenumber="8"></span>
-<span data-linenumber="9"></span></div><div class="code"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute</span><span class="hljs-params">()</span>:</span>
-    department = input()
-    studentid =  input()
-    name = input()
-    print(<span class="hljs-string">'Department:'</span>,department)
-    print(<span class="hljs-string">'Student ID:'</span>,studentid)
-    print(<span class="hljs-string">'Name:'</span>,name)
-
-compute()
-</div></div></code></pre><h2 id="502-乘積"><a class="anchor hidden-xs" href="#502-乘積" title="502-乘積"><span class="octicon octicon-link"></span></a>502 乘積</h2><h3 id="說明1"><a class="anchor hidden-xs" href="#說明1" title="說明1"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，將使用者輸入的兩個整數作為參數傳遞給一個名為compute(x, y)的函式，此函式將回傳x和y的乘積。</p><h3 id="輸入輸出1"><a class="anchor hidden-xs" href="#輸入輸出1" title="輸入輸出1"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/Ix3FDkC.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/gjP1aLG.png" alt=""></p><h3 id="Code1"><a class="anchor hidden-xs" href="#Code1" title="Code1"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
-<span data-linenumber="2"></span>
-<span data-linenumber="3"></span>
-<span data-linenumber="4"></span>
-<span data-linenumber="5"></span>
-<span data-linenumber="6"></span>
-<span data-linenumber="7"></span></div><div class="code"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute</span><span class="hljs-params">(x,y)</span>:</span>
-    <span class="hljs-keyword">return</span> x*y
-
-x = eval(input())
-y = eval(input())
-
-print(compute(x,y))
-</div></div></code></pre><h2 id="503-連加計算"><a class="anchor hidden-xs" href="#503-連加計算" title="503-連加計算"><span class="octicon octicon-link"></span></a>503 連加計算</h2><h3 id="說明2"><a class="anchor hidden-xs" href="#說明2" title="說明2"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入兩個整數，接著呼叫函式compute()，此函式接收兩個參數a、b，並回傳從a連加到b的和。</p><h3 id="輸入輸出2"><a class="anchor hidden-xs" href="#輸入輸出2" title="輸入輸出2"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/oGibe74.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/3aN2MLt.png" alt=""></p><h3 id="Code2"><a class="anchor hidden-xs" href="#Code2" title="Code2"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
-<span data-linenumber="2"></span>
-<span data-linenumber="3"></span>
-<span data-linenumber="4"></span>
-<span data-linenumber="5"></span>
-<span data-linenumber="6"></span>
-<span data-linenumber="7"></span>
-<span data-linenumber="8"></span>
-<span data-linenumber="9"></span>
-<span data-linenumber="10"></span></div><div class="code"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute</span><span class="hljs-params">(a,b)</span>:</span>
-    ans=<span class="hljs-number">0</span>
-    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(a,b+<span class="hljs-number">1</span>):
-        ans+=i
-    <span class="hljs-keyword">return</span> ans
-
-x = eval(input())
-y = eval(input())
-
-print(compute(x,y))
-</div></div></code></pre><h2 id="504-次方計算"><a class="anchor hidden-xs" href="#504-次方計算" title="504-次方計算"><span class="octicon octicon-link"></span></a>504 次方計算</h2><h3 id="說明3"><a class="anchor hidden-xs" href="#說明3" title="說明3"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入兩個整數，接著呼叫函式compute()，此函式接收兩個參數a、b，並回傳a<sup>b</sup>的值。</p><h3 id="輸入輸出3"><a class="anchor hidden-xs" href="#輸入輸出3" title="輸入輸出3"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/6rjVwWL.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/NDOIBTw.png" alt=""></p><h3 id="Code3"><a class="anchor hidden-xs" href="#Code3" title="Code3"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
-<span data-linenumber="2"></span>
-<span data-linenumber="3"></span>
-<span data-linenumber="4"></span>
-<span data-linenumber="5"></span>
-<span data-linenumber="6"></span></div><div class="code"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute</span><span class="hljs-params">(a,b)</span>:</span>
-    <span class="hljs-keyword">return</span> pow(a,b)
-
-x = eval(input())
-y = eval(input())
-print(compute(x,y))
-</div></div></code></pre><h2 id="505-依參數格式化輸出"><a class="anchor hidden-xs" href="#505-依參數格式化輸出" title="505-依參數格式化輸出"><span class="octicon octicon-link"></span></a>505 依參數格式化輸出</h2><h3 id="說明4"><a class="anchor hidden-xs" href="#說明4" title="說明4"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，將使用者輸入的三個參數，變數名稱分別為a（代表字元character）、x（代表個數）、y（代表列數），作為參數傳遞給一個名為compute()的函式，該函式功能為：一列印出x個a字元，總共印出y列。</p><blockquote>
-<p>輸出的每一個字元後方有一空格。</p>
-</blockquote><h3 id="輸入輸出4"><a class="anchor hidden-xs" href="#輸入輸出4" title="輸入輸出4"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/XCrPfQ6.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/0twes0l.png" alt=""></p><h3 id="Code4"><a class="anchor hidden-xs" href="#Code4" title="Code4"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
-<span data-linenumber="2"></span>
-<span data-linenumber="3"></span>
-<span data-linenumber="4"></span>
-<span data-linenumber="5"></span>
-<span data-linenumber="6"></span>
-<span data-linenumber="7"></span>
-<span data-linenumber="8"></span>
-<span data-linenumber="9"></span>
-<span data-linenumber="10"></span></div><div class="code"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute</span><span class="hljs-params">(a,x,y)</span>:</span>
-    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(y):
-        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(x):
-            print(<span class="hljs-string">'%c '</span>%a,end=<span class="hljs-string">''</span>)
-        print()
-
-a = input()
-x = eval(input())
-y = eval(input())
-compute(a,x,y)
-</div></div></code></pre><h2 id="506-一元二次方程式"><a class="anchor hidden-xs" href="#506-一元二次方程式" title="506-一元二次方程式"><span class="octicon octicon-link"></span></a>506 一元二次方程式</h2><h3 id="說明5"><a class="anchor hidden-xs" href="#說明5" title="說明5"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，將使用者輸入的三個整數（代表一元二次方程式 ax<sup>2</sup>+bx+c=0的三個係數a、b、c）作為參數傳遞給一個名為compute()的函式，該函式回傳方程式的解，如無解則輸出【Your equation has noroot.】</p><blockquote>
-<p>輸出有順序性</p>
-</blockquote><h3 id="輸入輸出5"><a class="anchor hidden-xs" href="#輸入輸出5" title="輸入輸出5"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/LQtGMUB.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/oM89xNr.png" alt=""></p><h3 id="Code5"><a class="anchor hidden-xs" href="#Code5" title="Code5"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1 id="Python-TQC-601610"><a class="anchor hidden-xs" href="#Python-TQC-601610" title="Python-TQC-601610"><span class="octicon octicon-link"></span></a>Python TQC 601~610</h1><h2 id="601-偶數索引值加總"><a class="anchor hidden-xs" href="#601-偶數索引值加總" title="601-偶數索引值加總"><span class="octicon octicon-link"></span></a>601 偶數索引值加總</h2><h3 id="說明"><a class="anchor hidden-xs" href="#說明" title="說明"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，利用一維串列存放使用者輸入的12個正整數（範圍1~99）。顯示這些數字，接著將串列索引為偶數的數字相加並輸出結果。</p><blockquote>
+<p>輸出每一個數字欄寬設定為3，每3個一列，靠右對齊。</p>
+</blockquote><h3 id="輸入輸出"><a class="anchor hidden-xs" href="#輸入輸出" title="輸入輸出"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/34kkRqw.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/fWqYVfg.png" alt=""></p><h3 id="Code"><a class="anchor hidden-xs" href="#Code" title="Code"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
 <span data-linenumber="2"></span>
 <span data-linenumber="3"></span>
 <span data-linenumber="4"></span>
@@ -129,23 +48,22 @@ compute(a,x,y)
 <span data-linenumber="10"></span>
 <span data-linenumber="11"></span>
 <span data-linenumber="12"></span>
-<span data-linenumber="13"></span>
-<span data-linenumber="14"></span></div><div class="code"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute</span><span class="hljs-params">(a,b,c)</span>:</span>
-    <span class="hljs-keyword">if</span> (pow(b,<span class="hljs-number">2</span>)-(<span class="hljs-number">4</span>*a*c)) &lt; <span class="hljs-number">0</span>:
-        print(<span class="hljs-string">'You question has no solution!'</span>)
-        <span class="hljs-keyword">return</span> <span class="hljs-keyword">None</span>
+<span data-linenumber="13"></span></div><div class="code">list1 = []
+size=<span class="hljs-number">12</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,size+<span class="hljs-number">1</span>):
+    list1.append(eval(input()))
+total=<span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,size+<span class="hljs-number">1</span>):
+    <span class="hljs-keyword">if</span> i%<span class="hljs-number">3</span>==<span class="hljs-number">0</span>:
+        print(<span class="hljs-string">'%3d'</span>%(list1[i<span class="hljs-number">-1</span>]))
     <span class="hljs-keyword">else</span>:
-        ans1 = (-b+(pow(pow(b,<span class="hljs-number">2</span>)-(<span class="hljs-number">4</span>*a*c),<span class="hljs-number">0.5</span>)))/(<span class="hljs-number">2</span>*a)
-        ans2 = (-b-(pow(pow(b,<span class="hljs-number">2</span>)-(<span class="hljs-number">4</span>*a*c),<span class="hljs-number">0.5</span>)))/(<span class="hljs-number">2</span>*a)
-        <span class="hljs-keyword">return</span> str(ans1)+<span class="hljs-string">','</span>+str(ans2)
-
-a = eval(input())
-b = eval(input())
-c = eval(input())
-
-print(compute(a,b,c))
-</div></div></code></pre><h2 id="507-質數"><a class="anchor hidden-xs" href="#507-質數" title="507-質數"><span class="octicon octicon-link"></span></a>507 質數</h2><h3 id="說明6"><a class="anchor hidden-xs" href="#說明6" title="說明6"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入一個整數x，並將x傳遞給名為compute()的函式，此函式將回傳x是否為質數（Prime number）的布林值，接著再將判斷結果輸出。如輸入值為質數顯示【Prime】，否則顯示【Not Prime】。</p><h3 id="輸入輸出6"><a class="anchor hidden-xs" href="#輸入輸出6" title="輸入輸出6"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
-<img src="https://i.imgur.com/phsS6rx.png" alt=""></p><p><img src="https://i.imgur.com/Wvst2MB.png" alt=""></p><p><img src="https://i.imgur.com/37ZcC5I.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/8V3VzuU.png" alt=""></p><p><img src="https://i.imgur.com/uwnLDoE.png" alt=""></p><p><img src="https://i.imgur.com/uwnLDoE.png" alt=""></p><h3 id="Code6"><a class="anchor hidden-xs" href="#Code6" title="Code6"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+        print(<span class="hljs-string">'%3d'</span>%list1[i<span class="hljs-number">-1</span>],end=<span class="hljs-string">''</span>)
+    <span class="hljs-keyword">if</span> (i<span class="hljs-number">-1</span>)%<span class="hljs-number">2</span>==<span class="hljs-number">0</span>:
+        total+=list1[i<span class="hljs-number">-1</span>]
+print(total)
+</div></div></code></pre><h2 id="602-撲克牌總和"><a class="anchor hidden-xs" href="#602-撲克牌總和" title="602-撲克牌總和"><span class="octicon octicon-link"></span></a>602 撲克牌總和</h2><h3 id="說明1"><a class="anchor hidden-xs" href="#說明1" title="說明1"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入52張牌中的5張，計算並輸出其總和。</p><blockquote>
+<p>J、Q、K以及A分別代表11、12、13以及1。</p>
+</blockquote><h3 id="輸入輸出1"><a class="anchor hidden-xs" href="#輸入輸出1" title="輸入輸出1"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/ptS3tdF.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/yrD7yT4.png" alt=""></p><h3 id="Code1"><a class="anchor hidden-xs" href="#Code1" title="Code1"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
 <span data-linenumber="2"></span>
 <span data-linenumber="3"></span>
 <span data-linenumber="4"></span>
@@ -159,22 +77,47 @@ print(compute(a,b,c))
 <span data-linenumber="12"></span>
 <span data-linenumber="13"></span>
 <span data-linenumber="14"></span>
-<span data-linenumber="15"></span></div><div class="code"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute</span><span class="hljs-params">(x)</span>:</span>
-    <span class="hljs-keyword">if</span> x &lt;= <span class="hljs-number">1</span>:
-        <span class="hljs-keyword">return</span> <span class="hljs-keyword">False</span>
-    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>,x):
-        <span class="hljs-keyword">if</span> x%i == <span class="hljs-number">0</span>:
-            <span class="hljs-keyword">return</span> <span class="hljs-keyword">False</span>
-        
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">True</span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span></div><div class="code">size=<span class="hljs-number">5</span>
+ans=<span class="hljs-number">0</span>
+card=[]
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(size):
+    card.append(input())
+    <span class="hljs-keyword">if</span> card[i] == <span class="hljs-string">'a'</span> <span class="hljs-keyword">or</span> card[i] == <span class="hljs-string">'A'</span>:
+        ans+=<span class="hljs-number">1</span>
+    <span class="hljs-keyword">elif</span> card[i] == <span class="hljs-string">'j'</span> <span class="hljs-keyword">or</span> card[i] ==<span class="hljs-string">'J'</span>:
+        ans+=<span class="hljs-number">11</span>
+    <span class="hljs-keyword">elif</span> card[i] == <span class="hljs-string">'q'</span> <span class="hljs-keyword">or</span> card[i]==<span class="hljs-string">'Q'</span>:
+        ans+=<span class="hljs-number">12</span>
+    <span class="hljs-keyword">elif</span> card[i] == <span class="hljs-string">'k'</span> <span class="hljs-keyword">or</span> card[i]==<span class="hljs-string">'K'</span>:
+        ans+=<span class="hljs-number">13</span>
+    <span class="hljs-keyword">elif</span> card[i] == <span class="hljs-string">'10'</span>:
+        ans+=<span class="hljs-number">10</span>
+    <span class="hljs-keyword">else</span>:
+        ans += eval(card[i])
+print(ans)
+</div></div></code></pre><h2 id="603-數字排序"><a class="anchor hidden-xs" href="#603-數字排序" title="603-數字排序"><span class="octicon octicon-link"></span></a>603 數字排序</h2><h3 id="說明2"><a class="anchor hidden-xs" href="#說明2" title="說明2"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，要求使用者輸入十個數字並存放在串列中。接著由大到小的順序顯示最大的3個數字。。</p><h3 id="輸入輸出2"><a class="anchor hidden-xs" href="#輸入輸出2" title="輸入輸出2"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/5vU97XJ.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/ocuHZh7.png" alt=""></p><h3 id="Code2"><a class="anchor hidden-xs" href="#Code2" title="Code2"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span></div><div class="code">SIZE = <span class="hljs-number">10</span>
+num = []
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(SIZE):
+    num.append(eval(input()))
+    
+num.sort()
 
-x = eval(input())
-
-<span class="hljs-keyword">if</span> compute(x):
-    print(<span class="hljs-string">'Prime'</span>)
-<span class="hljs-keyword">else</span>:
-    print(<span class="hljs-string">'Not Prime'</span>)
-</div></div></code></pre><h2 id="508-最大公因數"><a class="anchor hidden-xs" href="#508-最大公因數" title="508-最大公因數"><span class="octicon octicon-link"></span></a>508 最大公因數</h2><h3 id="說明7"><a class="anchor hidden-xs" href="#說明7" title="說明7"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入兩個正整數x、y，並將x與y傳遞給名為compute()的函式，此函式回傳x和y的最大公因數。</p><h3 id="輸入輸出7"><a class="anchor hidden-xs" href="#輸入輸出7" title="輸入輸出7"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/pk2KGI1.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/6Y1FzxP.png" alt=""></p><h3 id="Code7"><a class="anchor hidden-xs" href="#Code7" title="Code7"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+print(<span class="hljs-string">'%d %d %d'</span>%(num[<span class="hljs-number">-1</span>],num[<span class="hljs-number">-2</span>],num[<span class="hljs-number">-3</span>]))
+</div></div></code></pre><h2 id="604-眾數"><a class="anchor hidden-xs" href="#604-眾數" title="604-眾數"><span class="octicon octicon-link"></span></a>604 眾數</h2><h3 id="說明3"><a class="anchor hidden-xs" href="#說明3" title="說明3"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入十個整數作為樣本數，輸出眾數（樣本中出現最多次的數字）及其出現的次數</p><blockquote>
+<p>需import math模組，並使用math.pi。</p>
+</blockquote><blockquote>
+<p>假設樣本中只有一個眾數</p>
+</blockquote><h3 id="輸入輸出3"><a class="anchor hidden-xs" href="#輸入輸出3" title="輸入輸出3"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/Vk9ZDqp.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/FhSQ3aH.png" alt=""></p><h3 id="Code3"><a class="anchor hidden-xs" href="#Code3" title="Code3"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
 <span data-linenumber="2"></span>
 <span data-linenumber="3"></span>
 <span data-linenumber="4"></span>
@@ -182,16 +125,42 @@ x = eval(input())
 <span data-linenumber="6"></span>
 <span data-linenumber="7"></span>
 <span data-linenumber="8"></span>
-<span data-linenumber="9"></span></div><div class="code"><span class="hljs-function"><span class="hljs-keyword">def</span>  <span class="hljs-title">compute</span><span class="hljs-params">(x,y)</span>:</span>
-    gcd = <span class="hljs-number">1</span>  
-    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,min(x,y)+<span class="hljs-number">1</span>):
-        <span class="hljs-keyword">if</span> x%i==<span class="hljs-number">0</span> <span class="hljs-keyword">and</span> y%i==<span class="hljs-number">0</span>:
-            gcd=i
-    <span class="hljs-keyword">return</span> gcd        
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span></div><div class="code">size=<span class="hljs-number">10</span>
+num = []
+count = [<span class="hljs-number">0</span>]*size
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(size):
+    temp = eval(input())
+    num.append(temp)
+    count[num.index(temp)] += <span class="hljs-number">1</span>
+maxcount = max(count)
+
+print(num[count.index(maxcount)])
+print(maxcount)
+</div></div></code></pre><h2 id="605-成績計算"><a class="anchor hidden-xs" href="#605-成績計算" title="605-成績計算"><span class="octicon octicon-link"></span></a>605 成績計算</h2><h3 id="說明4"><a class="anchor hidden-xs" href="#說明4" title="說明4"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入十個成績，接下來將十個成績中最小和最大值（最小、最大值不重複）以外的成績作加總及平均，並輸出結果。</p><blockquote>
+<p>輸出浮點數到小數點後第二位。</p>
+</blockquote><h3 id="輸入輸出4"><a class="anchor hidden-xs" href="#輸入輸出4" title="輸入輸出4"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
+<img src="https://i.imgur.com/H0q9OXv.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/JkgIzZu.png" alt=""></p><h3 id="Code4"><a class="anchor hidden-xs" href="#Code4" title="Code4"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span></div><div class="code">size = <span class="hljs-number">10</span>
+score = []
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(size):
+    score.append(eval(input()))
     
-x,y = eval(input())
-print(compute(x,y))
-</div></div></code></pre><h2 id="509-最簡分數"><a class="anchor hidden-xs" href="#509-最簡分數" title="509-最簡分數"><span class="octicon octicon-link"></span></a>509 最簡分數</h2><h3 id="說明8"><a class="anchor hidden-xs" href="#說明8" title="說明8"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入二個分數，分別是x/y和m/n（其中x、y、m、n皆為正整數），計算這兩個分數的和為p/q，接著將p和q傳遞給名為compute()函式，此函式回傳p和q的最大公因數（Greatest Common Divisor, GCD）。再將p和q各除以其最大公因數，最後輸出的結果必須以最簡分數表示。</p><h3 id="輸入輸出8"><a class="anchor hidden-xs" href="#輸入輸出8" title="輸入輸出8"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/rsMWQxt.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/LlosYUS.png" alt=""></p><h3 id="Code8"><a class="anchor hidden-xs" href="#Code8" title="Code8"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+ans=sum(score)-max(score)-min(score)
+print(<span class="hljs-string">'%d'</span>%ans)
+print(<span class="hljs-string">'%.2f'</span>%(ans/<span class="hljs-number">8</span>))
+</div></div></code></pre><h2 id="606-二維串列行列數"><a class="anchor hidden-xs" href="#606-二維串列行列數" title="606-二維串列行列數"><span class="octicon octicon-link"></span></a>606 二維串列行列數</h2><h3 id="說明5"><a class="anchor hidden-xs" href="#說明5" title="說明5"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入兩個正整數rows、cols，分別表示二維串列lst 的「第一個維度大小」與「第二個維度大小」。串列元素[row][col]所儲存的數字，其規則為：row、col 的交點值 = 第二個維度的索引col – 第一個維度的索引row。接著以該串列作為參數呼叫函式compute()輸出串列。</p><blockquote>
+<p>欄寬為4。</p>
+</blockquote><h3 id="輸入輸出5"><a class="anchor hidden-xs" href="#輸入輸出5" title="輸入輸出5"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/kLKAJyC.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/xC8oexU.png" alt=""></p><h3 id="Code5"><a class="anchor hidden-xs" href="#Code5" title="Code5"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
 <span data-linenumber="2"></span>
 <span data-linenumber="3"></span>
 <span data-linenumber="4"></span>
@@ -204,24 +173,46 @@ print(compute(x,y))
 <span data-linenumber="11"></span>
 <span data-linenumber="12"></span>
 <span data-linenumber="13"></span>
-<span data-linenumber="14"></span></div><div class="code"><span class="hljs-function"><span class="hljs-keyword">def</span>  <span class="hljs-title">compute</span><span class="hljs-params">(x,y)</span>:</span>
-    gcd = <span class="hljs-number">1</span>  
-    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,min(x,y)+<span class="hljs-number">1</span>):
-        <span class="hljs-keyword">if</span> x%i==<span class="hljs-number">0</span> <span class="hljs-keyword">and</span> y%i==<span class="hljs-number">0</span>:
-            gcd=i
-    <span class="hljs-keyword">return</span> gcd  
+<span data-linenumber="14"></span></div><div class="code"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute</span><span class="hljs-params">(rows,cols)</span>:</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(rows):
+        list1.append([])
+        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(cols):
+            list1[i].append(j-i)  
+            print(<span class="hljs-string">'%4d'</span>%list1[i][j],end=<span class="hljs-string">''</span>)
+        print()
 
-x,y = eval(input())
-m,n = eval(input())
-q = y*n
-p = m*y+x*n
-gcd=compute(p,q)
+list1=[]
 
-print(x,<span class="hljs-string">'/'</span>,y,<span class="hljs-string">' + '</span>,m,<span class="hljs-string">'/'</span>,n,<span class="hljs-string">' = '</span>,int(p/gcd),<span class="hljs-string">'/'</span>,int(q/gcd))
-</div></div></code></pre><h2 id="510-費氏數列"><a class="anchor hidden-xs" href="#510-費氏數列" title="510-費氏數列"><span class="octicon octicon-link"></span></a>510 費氏數列</h2><h3 id="說明9"><a class="anchor hidden-xs" href="#說明9" title="說明9"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，計算費氏數列（Fibonacci numbers），使用者輸入一正整數num (num&gt;=2)，並將它傳遞給名為compute()的函式，此函式將輸出費氏數列前num個的數值。</p><blockquote>
-<p>費氏數列的某一項數字是其前兩項的和，而且第0項為0，第一項為1，表示方式如下：</p>
-</blockquote><p><img src="https://i.imgur.com/NajUtop.png" alt=""></p><h3 id="輸入輸出9"><a class="anchor hidden-xs" href="#輸入輸出9" title="輸入輸出9"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
-<img src="https://i.imgur.com/czW0cqO.png" alt=""></p><p><img src="https://i.imgur.com/a9tZmBU.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/GKbB8iG.png" alt=""></p><p><img src="https://i.imgur.com/hITDR6z.png" alt=""></p><h3 id="Code9"><a class="anchor hidden-xs" href="#Code9" title="Code9"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+rows = eval(input())
+cols = eval(input())
+
+compute(rows,cols)
+</div></div></code></pre><h2 id="607-成績計算"><a class="anchor hidden-xs" href="#607-成績計算" title="607-成績計算"><span class="octicon octicon-link"></span></a>607 成績計算</h2><h3 id="說明6"><a class="anchor hidden-xs" href="#說明6" title="說明6"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入三位學生各五筆成績，接著再計算並輸出每位學生的總分及平均分數。</p><blockquote>
+<p>平均分數輸出到小數點後第二位。</p>
+</blockquote><h3 id="輸入輸出6"><a class="anchor hidden-xs" href="#輸入輸出6" title="輸入輸出6"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/57n3KOs.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/hsQlCbp.png" alt=""></p><h3 id="Code6"><a class="anchor hidden-xs" href="#Code6" title="Code6"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span></div><div class="code">data = []
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+    print(<span class="hljs-string">'The %d student:'</span>%(i+<span class="hljs-number">1</span>))
+    data.append([])
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
+        data[i].append(eval(input()))
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+     print(<span class="hljs-string">'Student %d:'</span>%(i+<span class="hljs-number">1</span>))
+     print(<span class="hljs-string">'Sum %d'</span>%(sum(data[i])))
+     print(<span class="hljs-string">'Average %.2f'</span>%(sum(data[i])/len(data[i])))
+</div></div></code></pre><h2 id="608-最大最小值索引"><a class="anchor hidden-xs" href="#608-最大最小值索引" title="608-最大最小值索引"><span class="octicon octicon-link"></span></a>608 最大最小值索引</h2><h3 id="說明7"><a class="anchor hidden-xs" href="#說明7" title="說明7"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者建立一個3*3的矩陣，其內容為從鍵盤輸入的整數（不重複），接著輸出矩陣最大值與最小值的索引</p><h3 id="輸入輸出7"><a class="anchor hidden-xs" href="#輸入輸出7" title="輸入輸出7"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/NTfjTcO.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/oaz83FC.png" alt=""></p><h3 id="Code7"><a class="anchor hidden-xs" href="#Code7" title="Code7"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
 <span data-linenumber="2"></span>
 <span data-linenumber="3"></span>
 <span data-linenumber="4"></span>
@@ -233,27 +224,120 @@ print(x,<span class="hljs-string">'/'</span>,y,<span class="hljs-string">' + '</
 <span data-linenumber="10"></span>
 <span data-linenumber="11"></span>
 <span data-linenumber="12"></span>
-<span data-linenumber="13"></span></div><div class="code"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute</span><span class="hljs-params">(n)</span>:</span> 
-    curr = <span class="hljs-number">1</span>
-    pre = <span class="hljs-number">0</span>
-    print(<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,end=<span class="hljs-string">' '</span>)
-    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>,n):
-        temp = curr+pre
-        print(temp,end=<span class="hljs-string">' '</span>)
-        pre = curr
-        curr = temp
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span></div><div class="code">list1 = []
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+    list1.append([])
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+        list1[i].append(eval(input()))
         
-num = eval(input())
+max_index = min_index = [<span class="hljs-number">0</span>,<span class="hljs-number">0</span>]
+maxn = minn = list1[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]
 
-compute(num)
-</div></div></code></pre><hr><p>相關文章:</p><br>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(list1)):
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(len(list1[i])):
+        <span class="hljs-keyword">if</span> minn &gt; list1[i][j]:
+            minn = list1[i][j]
+            min_index=[i,j]
+        <span class="hljs-keyword">elif</span> maxn &lt; list1[i][j]:
+            maxn = list1[i][j]
+            max_index=[i,j]
+print(<span class="hljs-string">'Index of Max number'</span>,maxn,<span class="hljs-string">'is:'</span>,max_index)
+print(<span class="hljs-string">'Index of min number'</span>,minn,<span class="hljs-string">'is:'</span>,min_index)
+</div></div></code></pre><h2 id="609-矩陣相加"><a class="anchor hidden-xs" href="#609-矩陣相加" title="609-矩陣相加"><span class="octicon octicon-link"></span></a>609 矩陣相加</h2><h3 id="說明8"><a class="anchor hidden-xs" href="#說明8" title="說明8"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者建立兩個2*2的矩陣，其內容為從鍵盤輸入的整數，接著輸出這兩個矩陣的內容以及它們相加的結果。</p><h3 id="輸入輸出8"><a class="anchor hidden-xs" href="#輸入輸出8" title="輸入輸出8"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/YHYDgZl.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/m4sDNND.png" alt=""></p><h3 id="Code8"><a class="anchor hidden-xs" href="#Code8" title="Code8"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span>
+<span data-linenumber="23"></span>
+<span data-linenumber="24"></span>
+<span data-linenumber="25"></span>
+<span data-linenumber="26"></span>
+<span data-linenumber="27"></span>
+<span data-linenumber="28"></span></div><div class="code">user1 = []
+user2 = []
 
-	<a href="https://neroal.nctu.me/posts/TQC-%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80python(601~610)/" 
-		target="_blank" rel="noopener">Python TQC 601~610</a>
-	<br>
+print(<span class="hljs-string">'Enter user 1:'</span>)
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
+    user1.append([])
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
+        user1[i].append(eval(input()))
+print(<span class="hljs-string">'Enter user 2:'</span>)
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
+    user2.append([])
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
+        user2[i].append(eval(input()))  
+print(<span class="hljs-string">'Matrix1:'</span>)
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
+        print(user1[i][j],end=<span class="hljs-string">' '</span>)
+    print() 
+print(<span class="hljs-string">'Matrix2:'</span>)      
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
+        print(user2[i][j],end=<span class="hljs-string">' '</span>)
+    print() 
+print(<span class="hljs-string">'Sum of 2 Matrix:'</span>) 
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
+        print(user2[i][j]+user1[i][j],end=<span class="hljs-string">' '</span>)
+    print() 
+</div></div></code></pre><h2 id="610-平均溫度"><a class="anchor hidden-xs" href="#610-平均溫度" title="610-平均溫度"><span class="octicon octicon-link"></span></a>610 平均溫度</h2><h3 id="說明9"><a class="anchor hidden-xs" href="#說明9" title="說明9"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入四週各三天的溫度，接著計算並輸出這四週的平均溫度及最高、最低溫度。</p><blockquote>
+<p>輸出浮點數到小數點後第二位</p>
+</blockquote><h3 id="輸入輸出9"><a class="anchor hidden-xs" href="#輸入輸出9" title="輸入輸出9"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/tIIZOwk.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/xmUtHxN.png" alt=""></p><h3 id="Code9"><a class="anchor hidden-xs" href="#Code9" title="Code9"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span></div><div class="code">weektemp=[]
 
-
-<h6 id="tags-python"><a class="anchor hidden-xs" href="#tags-python" title="tags-python"><span class="octicon octicon-link"></span></a>tags: <code>python</code></h6></div>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">4</span>):
+    weektemp.append([])
+    print(<span class="hljs-string">'Week '</span>,i+<span class="hljs-number">1</span>,<span class="hljs-string">':'</span>)
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+        print(<span class="hljs-string">'Day'</span>,j+<span class="hljs-number">1</span>,end=<span class="hljs-string">':'</span>)
+        weektemp[i].append(eval(input()))
+        
+sum_temp = []
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">4</span>):
+    sum_temp.extend(weektemp[i])
+    
+print(<span class="hljs-string">'Average %.2f'</span>%(sum(sum_temp)/<span class="hljs-number">12</span>))
+print(<span class="hljs-string">'Height %.2f'</span>%(max(sum_temp)))
+print(<span class="hljs-string">'Lowest %.2f'</span>%(min(sum_temp)))
+</div></div></code></pre><hr><p>相關文章:</p><h6 id="tags-python"><a class="anchor hidden-xs" href="#tags-python" title="tags-python"><span class="octicon octicon-link"></span></a>tags: <code>python</code></h6></div>
     <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
         <div class="pull-right dropdown">
             <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
@@ -261,65 +345,65 @@ compute(num)
             </a>
             <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
                 <div class="toc"><ul class="nav">
-<li class=""><a href="#Python-TQC-501510" title="Python TQC 501~510">Python TQC 501~510</a><ul class="nav">
-<li><a href="#501-訊息顯示" title="501 訊息顯示">501 訊息顯示</a><ul class="nav">
-<li><a href="#說明" title="說明:">說明:</a></li>
-<li><a href="#輸入輸出" title="輸入/輸出">輸入/輸出</a></li>
+<li class=""><a href="#Python-TQC-601610" title="Python TQC 601~610">Python TQC 601~610</a><ul class="nav">
+<li class=""><a href="#601-偶數索引值加總" title="601 偶數索引值加總">601 偶數索引值加總</a><ul class="nav">
+<li class=""><a href="#說明" title="說明:">說明:</a></li>
+<li class=""><a href="#輸入輸出" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#502-乘積" title="502 乘積">502 乘積</a><ul class="nav">
+<li><a href="#602-撲克牌總和" title="602 撲克牌總和">602 撲克牌總和</a><ul class="nav">
 <li><a href="#說明1" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出1" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code1" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#503-連加計算" title="503 連加計算">503 連加計算</a><ul class="nav">
+<li><a href="#603-數字排序" title="603 數字排序">603 數字排序</a><ul class="nav">
 <li><a href="#說明2" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出2" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code2" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#504-次方計算" title="504 次方計算">504 次方計算</a><ul class="nav">
+<li><a href="#604-眾數" title="604 眾數">604 眾數</a><ul class="nav">
 <li><a href="#說明3" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出3" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code3" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#505-依參數格式化輸出" title="505 依參數格式化輸出">505 依參數格式化輸出</a><ul class="nav">
+<li><a href="#605-成績計算" title="605 成績計算">605 成績計算</a><ul class="nav">
 <li><a href="#說明4" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出4" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code4" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#506-一元二次方程式" title="506 一元二次方程式">506 一元二次方程式</a><ul class="nav">
+<li><a href="#606-二維串列行列數" title="606 二維串列行列數">606 二維串列行列數</a><ul class="nav">
 <li><a href="#說明5" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出5" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code5" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#507-質數" title="507 質數">507 質數</a><ul class="nav">
+<li><a href="#607-成績計算" title="607 成績計算">607 成績計算</a><ul class="nav">
 <li><a href="#說明6" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出6" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code6" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#508-最大公因數" title="508 最大公因數">508 最大公因數</a><ul class="nav">
+<li><a href="#608-最大最小值索引" title="608 最大最小值索引">608 最大最小值索引</a><ul class="nav">
 <li><a href="#說明7" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出7" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code7" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#509-最簡分數" title="509 最簡分數">509 最簡分數</a><ul class="nav">
+<li><a href="#609-矩陣相加" title="609 矩陣相加">609 矩陣相加</a><ul class="nav">
 <li><a href="#說明8" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出8" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code8" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li class=""><a href="#510-費氏數列" title="510 費氏數列">510 費氏數列</a><ul class="nav">
+<li><a href="#610-平均溫度" title="610 平均溫度">610 平均溫度</a><ul class="nav">
 <li><a href="#說明9" title="說明:">說明:</a></li>
-<li class=""><a href="#輸入輸出9" title="輸入/輸出">輸入/輸出</a></li>
-<li class=""><a href="#Code9" title="Code:">Code:</a></li>
+<li><a href="#輸入輸出9" title="輸入/輸出">輸入/輸出</a></li>
+<li><a href="#Code9" title="Code:">Code:</a></li>
 </ul>
 </li>
 </ul>
@@ -331,65 +415,65 @@ compute(num)
     </div>
     <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
         <div class="toc"><ul class="nav">
-<li class=""><a href="#Python-TQC-501510" title="Python TQC 501~510">Python TQC 501~510</a><ul class="nav">
-<li><a href="#501-訊息顯示" title="501 訊息顯示">501 訊息顯示</a><ul class="nav">
-<li><a href="#說明" title="說明:">說明:</a></li>
-<li><a href="#輸入輸出" title="輸入/輸出">輸入/輸出</a></li>
+<li class=""><a href="#Python-TQC-601610" title="Python TQC 601~610">Python TQC 601~610</a><ul class="nav">
+<li class=""><a href="#601-偶數索引值加總" title="601 偶數索引值加總">601 偶數索引值加總</a><ul class="nav">
+<li class=""><a href="#說明" title="說明:">說明:</a></li>
+<li class=""><a href="#輸入輸出" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#502-乘積" title="502 乘積">502 乘積</a><ul class="nav">
+<li><a href="#602-撲克牌總和" title="602 撲克牌總和">602 撲克牌總和</a><ul class="nav">
 <li><a href="#說明1" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出1" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code1" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#503-連加計算" title="503 連加計算">503 連加計算</a><ul class="nav">
+<li><a href="#603-數字排序" title="603 數字排序">603 數字排序</a><ul class="nav">
 <li><a href="#說明2" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出2" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code2" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#504-次方計算" title="504 次方計算">504 次方計算</a><ul class="nav">
+<li><a href="#604-眾數" title="604 眾數">604 眾數</a><ul class="nav">
 <li><a href="#說明3" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出3" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code3" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#505-依參數格式化輸出" title="505 依參數格式化輸出">505 依參數格式化輸出</a><ul class="nav">
+<li><a href="#605-成績計算" title="605 成績計算">605 成績計算</a><ul class="nav">
 <li><a href="#說明4" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出4" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code4" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#506-一元二次方程式" title="506 一元二次方程式">506 一元二次方程式</a><ul class="nav">
+<li><a href="#606-二維串列行列數" title="606 二維串列行列數">606 二維串列行列數</a><ul class="nav">
 <li><a href="#說明5" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出5" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code5" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#507-質數" title="507 質數">507 質數</a><ul class="nav">
+<li><a href="#607-成績計算" title="607 成績計算">607 成績計算</a><ul class="nav">
 <li><a href="#說明6" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出6" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code6" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#508-最大公因數" title="508 最大公因數">508 最大公因數</a><ul class="nav">
+<li><a href="#608-最大最小值索引" title="608 最大最小值索引">608 最大最小值索引</a><ul class="nav">
 <li><a href="#說明7" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出7" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code7" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#509-最簡分數" title="509 最簡分數">509 最簡分數</a><ul class="nav">
+<li><a href="#609-矩陣相加" title="609 矩陣相加">609 矩陣相加</a><ul class="nav">
 <li><a href="#說明8" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出8" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code8" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li class=""><a href="#510-費氏數列" title="510 費氏數列">510 費氏數列</a><ul class="nav">
+<li><a href="#610-平均溫度" title="610 平均溫度">610 平均溫度</a><ul class="nav">
 <li><a href="#說明9" title="說明:">說明:</a></li>
-<li class=""><a href="#輸入輸出9" title="輸入/輸出">輸入/輸出</a></li>
-<li class=""><a href="#Code9" title="Code:">Code:</a></li>
+<li><a href="#輸入輸出9" title="輸入/輸出">輸入/輸出</a></li>
+<li><a href="#Code9" title="Code:">Code:</a></li>
 </ul>
 </li>
 </ul>
