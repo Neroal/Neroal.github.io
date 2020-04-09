@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="mobile-web-app-capable" content="yes">
     <title>
-        Python TQC 601~610 - HackMD
+        Python TQC 701~710 - HackMD
     </title>
     <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
     <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
@@ -34,9 +34,7 @@
 </head>
 
 <body>
-    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1 id="Python-TQC-601610"><a class="anchor hidden-xs" href="#Python-TQC-601610" title="Python-TQC-601610"><span class="octicon octicon-link"></span></a>Python TQC 601~610</h1><h2 id="601-偶數索引值加總"><a class="anchor hidden-xs" href="#601-偶數索引值加總" title="601-偶數索引值加總"><span class="octicon octicon-link"></span></a>601 偶數索引值加總</h2><h3 id="說明"><a class="anchor hidden-xs" href="#說明" title="說明"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，利用一維串列存放使用者輸入的12個正整數（範圍1~99）。顯示這些數字，接著將串列索引為偶數的數字相加並輸出結果。</p><blockquote>
-<p>輸出每一個數字欄寬設定為3，每3個一列，靠右對齊。</p>
-</blockquote><h3 id="輸入輸出"><a class="anchor hidden-xs" href="#輸入輸出" title="輸入輸出"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/34kkRqw.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/fWqYVfg.png" alt=""></p><h3 id="Code"><a class="anchor hidden-xs" href="#Code" title="Code"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1 id="Python-TQC-701710"><a class="anchor hidden-xs" href="#Python-TQC-701710" title="Python-TQC-701710"><span class="octicon octicon-link"></span></a>Python TQC 701~710</h1><h2 id="701-串列數組轉換"><a class="anchor hidden-xs" href="#701-串列數組轉換" title="701-串列數組轉換"><span class="octicon octicon-link"></span></a>701 串列數組轉換</h2><h3 id="說明"><a class="anchor hidden-xs" href="#說明" title="說明"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，輸入數個整數並儲存至串列中，以輸入-9999為結束點（串列中不包含-9999），再將此串列轉換成數組，最後顯示該數組以及其長度（Length）、最大值（Max）、最小值（Min）、總和（Sum）。</p><h3 id="輸入輸出"><a class="anchor hidden-xs" href="#輸入輸出" title="輸入輸出"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/5s9zhOx.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/1TZHPps.png" alt=""></p><h3 id="Code"><a class="anchor hidden-xs" href="#Code" title="Code"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
 <span data-linenumber="2"></span>
 <span data-linenumber="3"></span>
 <span data-linenumber="4"></span>
@@ -46,173 +44,19 @@
 <span data-linenumber="8"></span>
 <span data-linenumber="9"></span>
 <span data-linenumber="10"></span>
-<span data-linenumber="11"></span>
-<span data-linenumber="12"></span>
-<span data-linenumber="13"></span></div><div class="code">list1 = []
-size=<span class="hljs-number">12</span>
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,size+<span class="hljs-number">1</span>):
-    list1.append(eval(input()))
-total=<span class="hljs-number">0</span>
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,size+<span class="hljs-number">1</span>):
-    <span class="hljs-keyword">if</span> i%<span class="hljs-number">3</span>==<span class="hljs-number">0</span>:
-        print(<span class="hljs-string">'%3d'</span>%(list1[i<span class="hljs-number">-1</span>]))
-    <span class="hljs-keyword">else</span>:
-        print(<span class="hljs-string">'%3d'</span>%list1[i<span class="hljs-number">-1</span>],end=<span class="hljs-string">''</span>)
-    <span class="hljs-keyword">if</span> (i<span class="hljs-number">-1</span>)%<span class="hljs-number">2</span>==<span class="hljs-number">0</span>:
-        total+=list1[i<span class="hljs-number">-1</span>]
-print(total)
-</div></div></code></pre><h2 id="602-撲克牌總和"><a class="anchor hidden-xs" href="#602-撲克牌總和" title="602-撲克牌總和"><span class="octicon octicon-link"></span></a>602 撲克牌總和</h2><h3 id="說明1"><a class="anchor hidden-xs" href="#說明1" title="說明1"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入52張牌中的5張，計算並輸出其總和。</p><blockquote>
-<p>J、Q、K以及A分別代表11、12、13以及1。</p>
-</blockquote><h3 id="輸入輸出1"><a class="anchor hidden-xs" href="#輸入輸出1" title="輸入輸出1"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/ptS3tdF.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/yrD7yT4.png" alt=""></p><h3 id="Code1"><a class="anchor hidden-xs" href="#Code1" title="Code1"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
-<span data-linenumber="2"></span>
-<span data-linenumber="3"></span>
-<span data-linenumber="4"></span>
-<span data-linenumber="5"></span>
-<span data-linenumber="6"></span>
-<span data-linenumber="7"></span>
-<span data-linenumber="8"></span>
-<span data-linenumber="9"></span>
-<span data-linenumber="10"></span>
-<span data-linenumber="11"></span>
-<span data-linenumber="12"></span>
-<span data-linenumber="13"></span>
-<span data-linenumber="14"></span>
-<span data-linenumber="15"></span>
-<span data-linenumber="16"></span>
-<span data-linenumber="17"></span>
-<span data-linenumber="18"></span></div><div class="code">size=<span class="hljs-number">5</span>
-ans=<span class="hljs-number">0</span>
-card=[]
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(size):
-    card.append(input())
-    <span class="hljs-keyword">if</span> card[i] == <span class="hljs-string">'a'</span> <span class="hljs-keyword">or</span> card[i] == <span class="hljs-string">'A'</span>:
-        ans+=<span class="hljs-number">1</span>
-    <span class="hljs-keyword">elif</span> card[i] == <span class="hljs-string">'j'</span> <span class="hljs-keyword">or</span> card[i] ==<span class="hljs-string">'J'</span>:
-        ans+=<span class="hljs-number">11</span>
-    <span class="hljs-keyword">elif</span> card[i] == <span class="hljs-string">'q'</span> <span class="hljs-keyword">or</span> card[i]==<span class="hljs-string">'Q'</span>:
-        ans+=<span class="hljs-number">12</span>
-    <span class="hljs-keyword">elif</span> card[i] == <span class="hljs-string">'k'</span> <span class="hljs-keyword">or</span> card[i]==<span class="hljs-string">'K'</span>:
-        ans+=<span class="hljs-number">13</span>
-    <span class="hljs-keyword">elif</span> card[i] == <span class="hljs-string">'10'</span>:
-        ans+=<span class="hljs-number">10</span>
-    <span class="hljs-keyword">else</span>:
-        ans += eval(card[i])
-print(ans)
-</div></div></code></pre><h2 id="603-數字排序"><a class="anchor hidden-xs" href="#603-數字排序" title="603-數字排序"><span class="octicon octicon-link"></span></a>603 數字排序</h2><h3 id="說明2"><a class="anchor hidden-xs" href="#說明2" title="說明2"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，要求使用者輸入十個數字並存放在串列中。接著由大到小的順序顯示最大的3個數字。。</p><h3 id="輸入輸出2"><a class="anchor hidden-xs" href="#輸入輸出2" title="輸入輸出2"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/5vU97XJ.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/ocuHZh7.png" alt=""></p><h3 id="Code2"><a class="anchor hidden-xs" href="#Code2" title="Code2"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
-<span data-linenumber="2"></span>
-<span data-linenumber="3"></span>
-<span data-linenumber="4"></span>
-<span data-linenumber="5"></span>
-<span data-linenumber="6"></span>
-<span data-linenumber="7"></span>
-<span data-linenumber="8"></span></div><div class="code">SIZE = <span class="hljs-number">10</span>
-num = []
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(SIZE):
-    num.append(eval(input()))
-    
-num.sort()
+<span data-linenumber="11"></span></div><div class="code">LIST = []
 
-print(<span class="hljs-string">'%d %d %d'</span>%(num[<span class="hljs-number">-1</span>],num[<span class="hljs-number">-2</span>],num[<span class="hljs-number">-3</span>]))
-</div></div></code></pre><h2 id="604-眾數"><a class="anchor hidden-xs" href="#604-眾數" title="604-眾數"><span class="octicon octicon-link"></span></a>604 眾數</h2><h3 id="說明3"><a class="anchor hidden-xs" href="#說明3" title="說明3"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入十個整數作為樣本數，輸出眾數（樣本中出現最多次的數字）及其出現的次數</p><blockquote>
-<p>需import math模組，並使用math.pi。</p>
-</blockquote><blockquote>
-<p>假設樣本中只有一個眾數</p>
-</blockquote><h3 id="輸入輸出3"><a class="anchor hidden-xs" href="#輸入輸出3" title="輸入輸出3"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/Vk9ZDqp.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/FhSQ3aH.png" alt=""></p><h3 id="Code3"><a class="anchor hidden-xs" href="#Code3" title="Code3"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
-<span data-linenumber="2"></span>
-<span data-linenumber="3"></span>
-<span data-linenumber="4"></span>
-<span data-linenumber="5"></span>
-<span data-linenumber="6"></span>
-<span data-linenumber="7"></span>
-<span data-linenumber="8"></span>
-<span data-linenumber="9"></span>
-<span data-linenumber="10"></span>
-<span data-linenumber="11"></span>
-<span data-linenumber="12"></span></div><div class="code">size=<span class="hljs-number">10</span>
-num = []
-count = [<span class="hljs-number">0</span>]*size
-
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(size):
-    temp = eval(input())
-    num.append(temp)
-    count[num.index(temp)] += <span class="hljs-number">1</span>
-maxcount = max(count)
-
-print(num[count.index(maxcount)])
-print(maxcount)
-</div></div></code></pre><h2 id="605-成績計算"><a class="anchor hidden-xs" href="#605-成績計算" title="605-成績計算"><span class="octicon octicon-link"></span></a>605 成績計算</h2><h3 id="說明4"><a class="anchor hidden-xs" href="#說明4" title="說明4"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入十個成績，接下來將十個成績中最小和最大值（最小、最大值不重複）以外的成績作加總及平均，並輸出結果。</p><blockquote>
-<p>輸出浮點數到小數點後第二位。</p>
-</blockquote><h3 id="輸入輸出4"><a class="anchor hidden-xs" href="#輸入輸出4" title="輸入輸出4"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
-<img src="https://i.imgur.com/H0q9OXv.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/JkgIzZu.png" alt=""></p><h3 id="Code4"><a class="anchor hidden-xs" href="#Code4" title="Code4"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
-<span data-linenumber="2"></span>
-<span data-linenumber="3"></span>
-<span data-linenumber="4"></span>
-<span data-linenumber="5"></span>
-<span data-linenumber="6"></span>
-<span data-linenumber="7"></span>
-<span data-linenumber="8"></span></div><div class="code">size = <span class="hljs-number">10</span>
-score = []
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(size):
-    score.append(eval(input()))
-    
-ans=sum(score)-max(score)-min(score)
-print(<span class="hljs-string">'%d'</span>%ans)
-print(<span class="hljs-string">'%.2f'</span>%(ans/<span class="hljs-number">8</span>))
-</div></div></code></pre><h2 id="606-二維串列行列數"><a class="anchor hidden-xs" href="#606-二維串列行列數" title="606-二維串列行列數"><span class="octicon octicon-link"></span></a>606 二維串列行列數</h2><h3 id="說明5"><a class="anchor hidden-xs" href="#說明5" title="說明5"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入兩個正整數rows、cols，分別表示二維串列lst 的「第一個維度大小」與「第二個維度大小」。串列元素[row][col]所儲存的數字，其規則為：row、col 的交點值 = 第二個維度的索引col – 第一個維度的索引row。接著以該串列作為參數呼叫函式compute()輸出串列。</p><blockquote>
-<p>欄寬為4。</p>
-</blockquote><h3 id="輸入輸出5"><a class="anchor hidden-xs" href="#輸入輸出5" title="輸入輸出5"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/kLKAJyC.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/xC8oexU.png" alt=""></p><h3 id="Code5"><a class="anchor hidden-xs" href="#Code5" title="Code5"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
-<span data-linenumber="2"></span>
-<span data-linenumber="3"></span>
-<span data-linenumber="4"></span>
-<span data-linenumber="5"></span>
-<span data-linenumber="6"></span>
-<span data-linenumber="7"></span>
-<span data-linenumber="8"></span>
-<span data-linenumber="9"></span>
-<span data-linenumber="10"></span>
-<span data-linenumber="11"></span>
-<span data-linenumber="12"></span>
-<span data-linenumber="13"></span>
-<span data-linenumber="14"></span></div><div class="code"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute</span><span class="hljs-params">(rows,cols)</span>:</span>
-    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(rows):
-        list1.append([])
-        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(cols):
-            list1[i].append(j-i)  
-            print(<span class="hljs-string">'%4d'</span>%list1[i][j],end=<span class="hljs-string">''</span>)
-        print()
-
-list1=[]
-
-rows = eval(input())
-cols = eval(input())
-
-compute(rows,cols)
-</div></div></code></pre><h2 id="607-成績計算"><a class="anchor hidden-xs" href="#607-成績計算" title="607-成績計算"><span class="octicon octicon-link"></span></a>607 成績計算</h2><h3 id="說明6"><a class="anchor hidden-xs" href="#說明6" title="說明6"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入三位學生各五筆成績，接著再計算並輸出每位學生的總分及平均分數。</p><blockquote>
-<p>平均分數輸出到小數點後第二位。</p>
-</blockquote><h3 id="輸入輸出6"><a class="anchor hidden-xs" href="#輸入輸出6" title="輸入輸出6"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/57n3KOs.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/hsQlCbp.png" alt=""></p><h3 id="Code6"><a class="anchor hidden-xs" href="#Code6" title="Code6"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
-<span data-linenumber="2"></span>
-<span data-linenumber="3"></span>
-<span data-linenumber="4"></span>
-<span data-linenumber="5"></span>
-<span data-linenumber="6"></span>
-<span data-linenumber="7"></span>
-<span data-linenumber="8"></span>
-<span data-linenumber="9"></span>
-<span data-linenumber="10"></span>
-<span data-linenumber="11"></span>
-<span data-linenumber="12"></span></div><div class="code">data = []
-
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
-    print(<span class="hljs-string">'The %d student:'</span>%(i+<span class="hljs-number">1</span>))
-    data.append([])
-    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
-        data[i].append(eval(input()))
-
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
-     print(<span class="hljs-string">'Student %d:'</span>%(i+<span class="hljs-number">1</span>))
-     print(<span class="hljs-string">'Sum %d'</span>%(sum(data[i])))
-     print(<span class="hljs-string">'Average %.2f'</span>%(sum(data[i])/len(data[i])))
-</div></div></code></pre><h2 id="608-最大最小值索引"><a class="anchor hidden-xs" href="#608-最大最小值索引" title="608-最大最小值索引"><span class="octicon octicon-link"></span></a>608 最大最小值索引</h2><h3 id="說明7"><a class="anchor hidden-xs" href="#說明7" title="說明7"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者建立一個3*3的矩陣，其內容為從鍵盤輸入的整數（不重複），接著輸出矩陣最大值與最小值的索引</p><h3 id="輸入輸出7"><a class="anchor hidden-xs" href="#輸入輸出7" title="輸入輸出7"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/NTfjTcO.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/oaz83FC.png" alt=""></p><h3 id="Code7"><a class="anchor hidden-xs" href="#Code7" title="Code7"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+num = eval(input())
+<span class="hljs-keyword">while</span> num!=<span class="hljs-number">-9999</span>:
+    LIST.append(num)
+    num = eval(input())
+TUPLE = tuple(LIST)
+print(TUPLE)
+print(<span class="hljs-string">'Lenght:'</span>,len(TUPLE))
+print(<span class="hljs-string">'Max:'</span>,max(TUPLE))
+print(<span class="hljs-string">'min:'</span>,min(TUPLE))
+</div></div></code></pre><h2 id="702-數組合併排序"><a class="anchor hidden-xs" href="#702-數組合併排序" title="702-數組合併排序"><span class="octicon octicon-link"></span></a>702 數組合併排序</h2><h3 id="說明1"><a class="anchor hidden-xs" href="#說明1" title="說明1"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，輸入並建立兩組數組，各以-9999為結束點（數組中不包含-9999）。將此兩數組合併並從小到大排序之，顯示排序前的數組和排序後的串列。</p><h3 id="輸入輸出1"><a class="anchor hidden-xs" href="#輸入輸出1" title="輸入輸出1"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/0mFYTFV.png" alt=""></p><p>範例輸出:<br>
+<img src="https://i.imgur.com/uNSSMyb.png" alt=""></p><h3 id="Code1"><a class="anchor hidden-xs" href="#Code1" title="Code1"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
 <span data-linenumber="2"></span>
 <span data-linenumber="3"></span>
 <span data-linenumber="4"></span>
@@ -230,26 +74,188 @@ compute(rows,cols)
 <span data-linenumber="16"></span>
 <span data-linenumber="17"></span>
 <span data-linenumber="18"></span>
-<span data-linenumber="19"></span></div><div class="code">list1 = []
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
-    list1.append([])
-    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
-        list1[i].append(eval(input()))
-        
-max_index = min_index = [<span class="hljs-number">0</span>,<span class="hljs-number">0</span>]
-maxn = minn = list1[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span></div><div class="code">tuple1 = ()
 
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(list1)):
-    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(len(list1[i])):
-        <span class="hljs-keyword">if</span> minn &gt; list1[i][j]:
-            minn = list1[i][j]
-            min_index=[i,j]
-        <span class="hljs-keyword">elif</span> maxn &lt; list1[i][j]:
-            maxn = list1[i][j]
-            max_index=[i,j]
-print(<span class="hljs-string">'Index of Max number'</span>,maxn,<span class="hljs-string">'is:'</span>,max_index)
-print(<span class="hljs-string">'Index of min number'</span>,minn,<span class="hljs-string">'is:'</span>,min_index)
-</div></div></code></pre><h2 id="609-矩陣相加"><a class="anchor hidden-xs" href="#609-矩陣相加" title="609-矩陣相加"><span class="octicon octicon-link"></span></a>609 矩陣相加</h2><h3 id="說明8"><a class="anchor hidden-xs" href="#說明8" title="說明8"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者建立兩個2*2的矩陣，其內容為從鍵盤輸入的整數，接著輸出這兩個矩陣的內容以及它們相加的結果。</p><h3 id="輸入輸出8"><a class="anchor hidden-xs" href="#輸入輸出8" title="輸入輸出8"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/YHYDgZl.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/m4sDNND.png" alt=""></p><h3 id="Code8"><a class="anchor hidden-xs" href="#Code8" title="Code8"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+print(<span class="hljs-string">'Create tuple 1:'</span>)
+num = eval(input())
+
+<span class="hljs-keyword">while</span> num !=<span class="hljs-number">-9999</span>:
+    tuple1 +=(num,)
+    num = eval(input())
+tuple2 = ()
+print(<span class="hljs-string">'Create tuple 2:'</span>)
+num = eval(input())
+<span class="hljs-keyword">while</span> num !=<span class="hljs-number">-9999</span>:
+    tuple2 +=(num,)
+    num = eval(input())
+tuple1 += tuple2
+
+print(<span class="hljs-string">'Combined tuple before sorting:'</span>,tuple1)
+
+LIST = list(tuple1)
+LIST.sort()
+
+print(<span class="hljs-string">'Combined list after sorting:'</span>,LIST)
+</div></div></code></pre><h2 id="703-數組條件判斷"><a class="anchor hidden-xs" href="#703-數組條件判斷" title="703-數組條件判斷"><span class="octicon octicon-link"></span></a>703 數組條件判斷</h2><h3 id="說明2"><a class="anchor hidden-xs" href="#說明2" title="說明2"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，輸入一些字串至數組（至少輸入五個字串），以字串"end"為結束點（數組中不包含字串"end"）。接著輸出該數組，再分別顯示該數組的第一個元素到第三個元素和倒數三個元素。</p><h3 id="輸入輸出2"><a class="anchor hidden-xs" href="#輸入輸出2" title="輸入輸出2"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
+<img src="https://i.imgur.com/GE7Np41.png" alt=""></p><p>範例輸出:<br>
+<img src="https://i.imgur.com/8eKuwvK.png" alt=""></p><h3 id="Code2"><a class="anchor hidden-xs" href="#Code2" title="Code2"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span></div><div class="code">TUPLE = ()
+string = input()
+<span class="hljs-keyword">while</span> string != <span class="hljs-string">"end"</span>:
+    TUPLE +=(string,)
+    string = input()
+print(TUPLE)
+print(TUPLE[<span class="hljs-number">0</span>:<span class="hljs-number">3</span>])
+print(TUPLE[<span class="hljs-number">-3</span>:])
+</div></div></code></pre><h2 id="704-集合條件判斷"><a class="anchor hidden-xs" href="#704-集合條件判斷" title="704-集合條件判斷"><span class="octicon octicon-link"></span></a>704 集合條件判斷</h2><h3 id="說明3"><a class="anchor hidden-xs" href="#說明3" title="說明3"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，輸入數個整數並儲存至集合，以輸入-9999為結束點（集合中不包含-9999），最後顯示該集合的長度（Length）、最大值（Max）、最小值（Min）、總和（Sum）。</p><h3 id="輸入輸出3"><a class="anchor hidden-xs" href="#輸入輸出3" title="輸入輸出3"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
+<img src="https://i.imgur.com/C6zTtOF.png" alt=""></p><p>範例輸出:<br>
+<img src="https://i.imgur.com/p4KfknQ.png" alt=""></p><h3 id="Code3"><a class="anchor hidden-xs" href="#Code3" title="Code3"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span></div><div class="code">set1 = set()
+
+num = eval(input())
+<span class="hljs-keyword">while</span> num!=<span class="hljs-number">-9999</span>:
+    set1.add(num)
+    num = eval(input())
+
+print(<span class="hljs-string">'Lenght:'</span>,len(set1))
+print(<span class="hljs-string">'Max:'</span>,max(set1))
+print(<span class="hljs-string">'min:'</span>,min(set1))
+print(<span class="hljs-string">'Sum:'</span>,sum(set1))
+</div></div></code></pre><h2 id="705-子集合與超集合"><a class="anchor hidden-xs" href="#705-子集合與超集合" title="705-子集合與超集合"><span class="octicon octicon-link"></span></a>705 子集合與超集合</h2><h3 id="說明4"><a class="anchor hidden-xs" href="#說明4" title="說明4"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，依序輸入五個、三個、九個整數，並各自儲存到集合set1、set2、set3中。接著回答：set2是否為set1的子集合（subset）？set3是否為set1的超集合（superset）？</p><h3 id="輸入輸出4"><a class="anchor hidden-xs" href="#輸入輸出4" title="輸入輸出4"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
+<img src="https://i.imgur.com/mHTYcNo.png" alt=""><br>
+<img src="https://i.imgur.com/Gqt4vko.png" alt=""></p><p>範例輸出:<br>
+<img src="https://i.imgur.com/GuvxmuI.png" alt=""></p><h3 id="Code4"><a class="anchor hidden-xs" href="#Code4" title="Code4"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span></div><div class="code">set1 = set()
+set2 = set()
+set3 = set()
+
+print(<span class="hljs-string">'Input to set1'</span>)
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
+    set1.add(eval(input()))
+    
+print(<span class="hljs-string">'Input to set2'</span>)
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+    set2.add(eval(input()))
+    
+print(<span class="hljs-string">'Input to set3'</span>)
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">9</span>):
+    set3.add(eval(input()))
+    
+print(<span class="hljs-string">'set2 is sibset of set1:'</span>,set2.issubset(set1))
+print(<span class="hljs-string">'set3 is sibset of set1:'</span>,set3.issuperset(set1))
+
+</div></div></code></pre><h2 id="706-全字母句"><a class="anchor hidden-xs" href="#706-全字母句" title="706-全字母句"><span class="octicon octicon-link"></span></a>706 全字母句</h2><h3 id="說明5"><a class="anchor hidden-xs" href="#說明5" title="說明5"><span class="octicon octicon-link"></span></a>說明:</h3><p>全字母句（Pangram）是英文字母表所有的字母都出現至少一次（最好只出現一次）的句子。請撰寫一程式，要求使用者輸入一正整數k（代表有k筆測試資料），每一筆測試資料為一句子，程式判斷該句子是否為Pangram，並印出對應結果True（若是）或False（若不是）。</p><h3 id="輸入輸出5"><a class="anchor hidden-xs" href="#輸入輸出5" title="輸入輸出5"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
+<img src="https://i.imgur.com/xRejUKK.png" alt=""></p><p>範例輸出:<br>
+<img src="https://i.imgur.com/OEUZtuj.png" alt=""></p><h3 id="Code5"><a class="anchor hidden-xs" href="#Code5" title="Code5"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span></div><div class="code">count= eval(input())
+
+alpha=<span class="hljs-number">26</span>
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(count):
+ sentence = input()
+ set1 = set(sentence.lower())
+ <span class="hljs-keyword">if</span> <span class="hljs-string">' '</span> <span class="hljs-keyword">in</span> set1:
+     set1.remove(<span class="hljs-string">' '</span>)
+ <span class="hljs-keyword">if</span> len(set1) &gt;= alpha:
+     print(<span class="hljs-string">'True'</span>)
+ <span class="hljs-keyword">else</span>:
+     print(<span class="hljs-string">'False'</span>)
+ 
+</div></div></code></pre><h2 id="707-共同科目"><a class="anchor hidden-xs" href="#707-共同科目" title="707-共同科目"><span class="octicon octicon-link"></span></a>707 共同科目</h2><h3 id="說明6"><a class="anchor hidden-xs" href="#說明6" title="說明6"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，輸入X組和Y組各自的科目至集合中，以字串"end"作為結束點（集合中不包含字串"end"）。請依序分行顯示(1) X組和Y組的所有科目、(2)X組和Y組的共同科目、(3)Y組有但X組沒有的科目，以及(4) X組和Y組彼此沒有的科目（不包含相同科目）。</p><h3 id="輸入輸出6"><a class="anchor hidden-xs" href="#輸入輸出6" title="輸入輸出6"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
+<img src="https://i.imgur.com/NYnb0fr.png" alt=""></p><p>範例輸出:<br>
+<img src="https://i.imgur.com/MiHXSoM.png" alt=""></p><h3 id="Code6"><a class="anchor hidden-xs" href="#Code6" title="Code6"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span></div><div class="code">xS = set()
+yS = set()
+
+print(<span class="hljs-string">'Enter group X subject:'</span>)
+
+x = input()
+
+<span class="hljs-keyword">while</span> x != <span class="hljs-string">'end'</span>:
+    xS.add(x)
+    x=input()
+    
+print(<span class="hljs-string">'Enter group Y subject:'</span>)
+y = input()
+
+<span class="hljs-keyword">while</span> y != <span class="hljs-string">'end'</span>:
+    yS.add(y)
+    y=input()
+    
+print(sorted(xS.union(yS)))
+print(sorted(yS.intersection(xS)))
+print(sorted(yS.difference(xS)))
+print(sorted(yS.symmetric_difference(xS)))
+</div></div></code></pre><h2 id="708-詞典合併"><a class="anchor hidden-xs" href="#708-詞典合併" title="708-詞典合併"><span class="octicon octicon-link"></span></a>708 詞典合併</h2><h3 id="說明7"><a class="anchor hidden-xs" href="#說明7" title="說明7"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，自行輸入兩個詞典（以輸入鍵值"end"作為輸入結束點，詞典中將不包含鍵值"end"），將此兩詞典合併，並根據key值字母由小到大排序輸出，如有重複key值，後輸入的key值將覆蓋前一key值。</p><h3 id="輸入輸出7"><a class="anchor hidden-xs" href="#輸入輸出7" title="輸入輸出7"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
+<img src="https://i.imgur.com/330HmUY.png" alt=""></p><p>範例輸出:<br>
+<img src="https://i.imgur.com/TawdADI.png" alt=""></p><h3 id="Code7"><a class="anchor hidden-xs" href="#Code7" title="Code7"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
 <span data-linenumber="2"></span>
 <span data-linenumber="3"></span>
 <span data-linenumber="4"></span>
@@ -271,42 +277,52 @@ print(<span class="hljs-string">'Index of min number'</span>,minn,<span class="h
 <span data-linenumber="20"></span>
 <span data-linenumber="21"></span>
 <span data-linenumber="22"></span>
-<span data-linenumber="23"></span>
-<span data-linenumber="24"></span>
-<span data-linenumber="25"></span>
-<span data-linenumber="26"></span>
-<span data-linenumber="27"></span>
-<span data-linenumber="28"></span></div><div class="code">user1 = []
-user2 = []
+<span data-linenumber="23"></span></div><div class="code">xDIC={}
+yDIC={}
 
-print(<span class="hljs-string">'Enter user 1:'</span>)
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
-    user1.append([])
-    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
-        user1[i].append(eval(input()))
-print(<span class="hljs-string">'Enter user 2:'</span>)
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
-    user2.append([])
-    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
-        user2[i].append(eval(input()))  
-print(<span class="hljs-string">'Matrix1:'</span>)
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
-    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
-        print(user1[i][j],end=<span class="hljs-string">' '</span>)
-    print() 
-print(<span class="hljs-string">'Matrix2:'</span>)      
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
-    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
-        print(user2[i][j],end=<span class="hljs-string">' '</span>)
-    print() 
-print(<span class="hljs-string">'Sum of 2 Matrix:'</span>) 
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
-    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
-        print(user2[i][j]+user1[i][j],end=<span class="hljs-string">' '</span>)
-    print() 
-</div></div></code></pre><h2 id="610-平均溫度"><a class="anchor hidden-xs" href="#610-平均溫度" title="610-平均溫度"><span class="octicon octicon-link"></span></a>610 平均溫度</h2><h3 id="說明9"><a class="anchor hidden-xs" href="#說明9" title="說明9"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入四週各三天的溫度，接著計算並輸出這四週的平均溫度及最高、最低溫度。</p><blockquote>
-<p>輸出浮點數到小數點後第二位</p>
-</blockquote><h3 id="輸入輸出9"><a class="anchor hidden-xs" href="#輸入輸出9" title="輸入輸出9"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:</p><p><img src="https://i.imgur.com/tIIZOwk.png" alt=""></p><p>範例輸出:</p><p><img src="https://i.imgur.com/xmUtHxN.png" alt=""></p><h3 id="Code9"><a class="anchor hidden-xs" href="#Code9" title="Code9"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+print(<span class="hljs-string">'Create dict1:'</span>)
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    key = input(<span class="hljs-string">'Key:'</span>)
+    <span class="hljs-keyword">if</span> key == <span class="hljs-string">'end'</span>:
+        <span class="hljs-keyword">break</span>
+    xDIC[key] = input(<span class="hljs-string">'Value:'</span>)
+    
+print(<span class="hljs-string">'Create dict2:'</span>)
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    key = input(<span class="hljs-string">'Key:'</span>)
+    <span class="hljs-keyword">if</span> key == <span class="hljs-string">'end'</span>:
+        <span class="hljs-keyword">break</span>
+    yDIC[key] = input(<span class="hljs-string">'Value:'</span>)
+    
+xDIC.update(yDIC)
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> sorted(xDIC.keys()):
+    print(i,<span class="hljs-string">': '</span>,xDIC[i])
+</div></div></code></pre><h2 id="709-詞典排序"><a class="anchor hidden-xs" href="#709-詞典排序" title="709-詞典排序"><span class="octicon octicon-link"></span></a>709 詞典排序</h2><h3 id="說明8"><a class="anchor hidden-xs" href="#說明8" title="說明8"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，輸入一顏色詞典color_dict（以輸入鍵值"end"作為輸入結束點，詞典中將不包含鍵值"end"），再根據key值的字母由小到大排序並輸出。</p><h3 id="輸入輸出8"><a class="anchor hidden-xs" href="#輸入輸出8" title="輸入輸出8"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
+<img src="https://i.imgur.com/MzQePua.png" alt=""></p><p>範例輸出:<br>
+<img src="https://i.imgur.com/1pdLNTZ.png" alt=""></p><h3 id="Code8"><a class="anchor hidden-xs" href="#Code8" title="Code8"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span></div><div class="code">color_dict = {}
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    key = input(<span class="hljs-string">'Key:'</span>)
+    <span class="hljs-keyword">if</span> key == <span class="hljs-string">'end'</span>:
+        <span class="hljs-keyword">break</span>
+    color_dict[key] = input(<span class="hljs-string">'Value:'</span>)
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> sorted(color_dict.keys()):
+    print(i,<span class="hljs-string">': '</span>,color_dict[i])
+</div></div></code></pre><h2 id="710-詞典搜尋"><a class="anchor hidden-xs" href="#710-詞典搜尋" title="710-詞典搜尋"><span class="octicon octicon-link"></span></a>710 詞典搜尋</h2><h3 id="說明9"><a class="anchor hidden-xs" href="#說明9" title="說明9"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，為一詞典輸入資料（以輸入鍵值"end"作為輸入結束點，詞典中將不包含鍵值"end"），再輸入一鍵值並檢視此鍵值是否存在於該詞典中。</p><h3 id="輸入輸出9"><a class="anchor hidden-xs" href="#輸入輸出9" title="輸入輸出9"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入/輸出:<br>
+<img src="https://i.imgur.com/AA3eMht.png" alt=""></p><h3 id="Code9"><a class="anchor hidden-xs" href="#Code9" title="Code9"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
 <span data-linenumber="2"></span>
 <span data-linenumber="3"></span>
 <span data-linenumber="4"></span>
@@ -318,32 +334,20 @@ print(<span class="hljs-string">'Sum of 2 Matrix:'</span>)
 <span data-linenumber="10"></span>
 <span data-linenumber="11"></span>
 <span data-linenumber="12"></span>
-<span data-linenumber="13"></span>
-<span data-linenumber="14"></span>
-<span data-linenumber="15"></span>
-<span data-linenumber="16"></span></div><div class="code">weektemp=[]
+<span data-linenumber="13"></span></div><div class="code">data_dist = {}
 
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">4</span>):
-    weektemp.append([])
-    print(<span class="hljs-string">'Week '</span>,i+<span class="hljs-number">1</span>,<span class="hljs-string">':'</span>)
-    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
-        print(<span class="hljs-string">'Day'</span>,j+<span class="hljs-number">1</span>,end=<span class="hljs-string">':'</span>)
-        weektemp[i].append(eval(input()))
-        
-sum_temp = []
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">4</span>):
-    sum_temp.extend(weektemp[i])
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    key = input(<span class="hljs-string">'Key:'</span>)
     
-print(<span class="hljs-string">'Average %.2f'</span>%(sum(sum_temp)/<span class="hljs-number">12</span>))
-print(<span class="hljs-string">'Height %.2f'</span>%(max(sum_temp)))
-print(<span class="hljs-string">'Lowest %.2f'</span>%(min(sum_temp)))
-</div></div></code></pre><hr><p>相關文章:</p>
+    <span class="hljs-keyword">if</span> key == <span class="hljs-string">'end'</span>:
+        <span class="hljs-keyword">break</span>
+    data_dist[key] = input(<span class="hljs-string">'Value:'</span>)
+    
+search = input(<span class="hljs-string">'Search key:'</span>)
 
-	<a href="https://neroal.nctu.me/posts/TQC-%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80python(701~710)/" 
-			target="_blank" rel="noopener">Python TQC 701~710</a>
-		<br>
+print(search <span class="hljs-keyword">in</span> data_dist.keys())
 
-<h6 id="tags-python"><a class="anchor hidden-xs" href="#tags-python" title="tags-python"><span class="octicon octicon-link"></span></a>tags: <code>python</code></h6></div>
+</div></div></code></pre><hr><p>相關文章:</p><h6 id="tags-python"><a class="anchor hidden-xs" href="#tags-python" title="tags-python"><span class="octicon octicon-link"></span></a>tags: <code>python</code></h6></div>
     <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
         <div class="pull-right dropdown">
             <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
@@ -351,62 +355,62 @@ print(<span class="hljs-string">'Lowest %.2f'</span>%(min(sum_temp)))
             </a>
             <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
                 <div class="toc"><ul class="nav">
-<li class=""><a href="#Python-TQC-601610" title="Python TQC 601~610">Python TQC 601~610</a><ul class="nav">
-<li class=""><a href="#601-偶數索引值加總" title="601 偶數索引值加總">601 偶數索引值加總</a><ul class="nav">
-<li class=""><a href="#說明" title="說明:">說明:</a></li>
-<li class=""><a href="#輸入輸出" title="輸入/輸出">輸入/輸出</a></li>
+<li class=""><a href="#Python-TQC-701710" title="Python TQC 701~710">Python TQC 701~710</a><ul class="nav">
+<li><a href="#701-串列數組轉換" title="701 串列數組轉換">701 串列數組轉換</a><ul class="nav">
+<li><a href="#說明" title="說明:">說明:</a></li>
+<li><a href="#輸入輸出" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#602-撲克牌總和" title="602 撲克牌總和">602 撲克牌總和</a><ul class="nav">
+<li><a href="#702-數組合併排序" title="702 數組合併排序">702 數組合併排序</a><ul class="nav">
 <li><a href="#說明1" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出1" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code1" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#603-數字排序" title="603 數字排序">603 數字排序</a><ul class="nav">
+<li><a href="#703-數組條件判斷" title="703 數組條件判斷">703 數組條件判斷</a><ul class="nav">
 <li><a href="#說明2" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出2" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code2" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#604-眾數" title="604 眾數">604 眾數</a><ul class="nav">
+<li><a href="#704-集合條件判斷" title="704 集合條件判斷">704 集合條件判斷</a><ul class="nav">
 <li><a href="#說明3" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出3" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code3" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#605-成績計算" title="605 成績計算">605 成績計算</a><ul class="nav">
+<li><a href="#705-子集合與超集合" title="705 子集合與超集合">705 子集合與超集合</a><ul class="nav">
 <li><a href="#說明4" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出4" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code4" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#606-二維串列行列數" title="606 二維串列行列數">606 二維串列行列數</a><ul class="nav">
+<li><a href="#706-全字母句" title="706 全字母句">706 全字母句</a><ul class="nav">
 <li><a href="#說明5" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出5" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code5" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#607-成績計算" title="607 成績計算">607 成績計算</a><ul class="nav">
+<li><a href="#707-共同科目" title="707 共同科目">707 共同科目</a><ul class="nav">
 <li><a href="#說明6" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出6" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code6" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#608-最大最小值索引" title="608 最大最小值索引">608 最大最小值索引</a><ul class="nav">
+<li><a href="#708-詞典合併" title="708 詞典合併">708 詞典合併</a><ul class="nav">
 <li><a href="#說明7" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出7" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code7" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#609-矩陣相加" title="609 矩陣相加">609 矩陣相加</a><ul class="nav">
+<li><a href="#709-詞典排序" title="709 詞典排序">709 詞典排序</a><ul class="nav">
 <li><a href="#說明8" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出8" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code8" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#610-平均溫度" title="610 平均溫度">610 平均溫度</a><ul class="nav">
+<li><a href="#710-詞典搜尋" title="710 詞典搜尋">710 詞典搜尋</a><ul class="nav">
 <li><a href="#說明9" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出9" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code9" title="Code:">Code:</a></li>
@@ -421,62 +425,62 @@ print(<span class="hljs-string">'Lowest %.2f'</span>%(min(sum_temp)))
     </div>
     <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
         <div class="toc"><ul class="nav">
-<li class=""><a href="#Python-TQC-601610" title="Python TQC 601~610">Python TQC 601~610</a><ul class="nav">
-<li class=""><a href="#601-偶數索引值加總" title="601 偶數索引值加總">601 偶數索引值加總</a><ul class="nav">
-<li class=""><a href="#說明" title="說明:">說明:</a></li>
-<li class=""><a href="#輸入輸出" title="輸入/輸出">輸入/輸出</a></li>
+<li class=""><a href="#Python-TQC-701710" title="Python TQC 701~710">Python TQC 701~710</a><ul class="nav">
+<li><a href="#701-串列數組轉換" title="701 串列數組轉換">701 串列數組轉換</a><ul class="nav">
+<li><a href="#說明" title="說明:">說明:</a></li>
+<li><a href="#輸入輸出" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#602-撲克牌總和" title="602 撲克牌總和">602 撲克牌總和</a><ul class="nav">
+<li><a href="#702-數組合併排序" title="702 數組合併排序">702 數組合併排序</a><ul class="nav">
 <li><a href="#說明1" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出1" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code1" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#603-數字排序" title="603 數字排序">603 數字排序</a><ul class="nav">
+<li><a href="#703-數組條件判斷" title="703 數組條件判斷">703 數組條件判斷</a><ul class="nav">
 <li><a href="#說明2" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出2" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code2" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#604-眾數" title="604 眾數">604 眾數</a><ul class="nav">
+<li><a href="#704-集合條件判斷" title="704 集合條件判斷">704 集合條件判斷</a><ul class="nav">
 <li><a href="#說明3" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出3" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code3" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#605-成績計算" title="605 成績計算">605 成績計算</a><ul class="nav">
+<li><a href="#705-子集合與超集合" title="705 子集合與超集合">705 子集合與超集合</a><ul class="nav">
 <li><a href="#說明4" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出4" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code4" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#606-二維串列行列數" title="606 二維串列行列數">606 二維串列行列數</a><ul class="nav">
+<li><a href="#706-全字母句" title="706 全字母句">706 全字母句</a><ul class="nav">
 <li><a href="#說明5" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出5" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code5" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#607-成績計算" title="607 成績計算">607 成績計算</a><ul class="nav">
+<li><a href="#707-共同科目" title="707 共同科目">707 共同科目</a><ul class="nav">
 <li><a href="#說明6" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出6" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code6" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#608-最大最小值索引" title="608 最大最小值索引">608 最大最小值索引</a><ul class="nav">
+<li><a href="#708-詞典合併" title="708 詞典合併">708 詞典合併</a><ul class="nav">
 <li><a href="#說明7" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出7" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code7" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#609-矩陣相加" title="609 矩陣相加">609 矩陣相加</a><ul class="nav">
+<li><a href="#709-詞典排序" title="709 詞典排序">709 詞典排序</a><ul class="nav">
 <li><a href="#說明8" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出8" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code8" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#610-平均溫度" title="610 平均溫度">610 平均溫度</a><ul class="nav">
+<li><a href="#710-詞典搜尋" title="710 詞典搜尋">710 詞典搜尋</a><ul class="nav">
 <li><a href="#說明9" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出9" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code9" title="Code:">Code:</a></li>
