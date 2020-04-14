@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="mobile-web-app-capable" content="yes">
     <title>
-        Python TQC 801~810 - HackMD
+        Python TQC 901~910 - HackMD
     </title>
     <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
     <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
@@ -34,62 +34,23 @@
 </head>
 
 <body>
-    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1 id="Python-TQC-801810"><a class="anchor hidden-xs" href="#Python-TQC-801810" title="Python-TQC-801810"><span class="octicon octicon-link"></span></a>Python TQC 801~810</h1><h2 id="801-字串索引"><a class="anchor hidden-xs" href="#801-字串索引" title="801-字串索引"><span class="octicon octicon-link"></span></a>801 字串索引</h2><h3 id="說明"><a class="anchor hidden-xs" href="#說明" title="說明"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，要求使用者輸入一字串，顯示該字串每個字元的索引。</p><h3 id="輸入輸出"><a class="anchor hidden-xs" href="#輸入輸出" title="輸入輸出"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
-<img src="https://i.imgur.com/AW1cz7g.png" alt=""></p><p>範例輸出:<br>
-<img src="https://i.imgur.com/x1eO9qV.png" alt=""></p><h3 id="Code"><a class="anchor hidden-xs" href="#Code" title="Code"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
-<span data-linenumber="2"></span>
-<span data-linenumber="3"></span>
-<span data-linenumber="4"></span></div><div class="code">LIST = input()
-
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(LIST)):
-    print(<span class="hljs-string">"Index of '%s':"</span>%LIST[i],i)
-</div></div></code></pre><h2 id="802-字元對應"><a class="anchor hidden-xs" href="#802-字元對應" title="802-字元對應"><span class="octicon octicon-link"></span></a>802 字元對應</h2><h3 id="說明1"><a class="anchor hidden-xs" href="#說明1" title="說明1"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，要求使用者輸入一字串，顯示該字串每個字元的對應ASCII碼及其總和。</p><h3 id="輸入輸出1"><a class="anchor hidden-xs" href="#輸入輸出1" title="輸入輸出1"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
-<img src="https://i.imgur.com/cPCyrT9.png" alt=""></p><p>範例輸出:<br>
-<img src="https://i.imgur.com/phpADZq.png" alt=""></p><h3 id="Code1"><a class="anchor hidden-xs" href="#Code1" title="Code1"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true" style="position: relative;"><h1 id="Python-TQC-901910"><a class="anchor hidden-xs" href="#Python-TQC-901910" title="Python-TQC-901910"><span class="octicon octicon-link"></span></a>Python TQC 901~910</h1><h2 id="901-成績資料"><a class="anchor hidden-xs" href="#901-成績資料" title="901-成績資料"><span class="octicon octicon-link"></span></a>901 成績資料</h2><h3 id="說明"><a class="anchor hidden-xs" href="#說明" title="說明"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，將使用者輸入的五筆資料寫入到write.txt（若不存在，則讓程式建立它），每一筆資料為一行，包含學生名字和期末總分，以空白隔開。檔案寫入完成後要關閉。</p><blockquote>
+<p>程式碼中所提供的檔案路徑，不可進行變動，write.txt檔案需為UTF-8編碼格式。</p>
+</blockquote><h3 id="輸入輸出"><a class="anchor hidden-xs" href="#輸入輸出" title="輸入輸出"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
+<img src="https://i.imgur.com/uFJoPpL.png" alt=""></p><p>範例輸出:<br>
+<img src="https://i.imgur.com/KhjLtTG.png" alt=""></p><h3 id="Code"><a class="anchor hidden-xs" href="#Code" title="Code"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
 <span data-linenumber="2"></span>
 <span data-linenumber="3"></span>
 <span data-linenumber="4"></span>
 <span data-linenumber="5"></span>
-<span data-linenumber="6"></span></div><div class="code">string = input()
-total = <span class="hljs-number">0</span>
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(string)):
-    total += ord(string[i])
-    print(<span class="hljs-string">"ASCII code for '%s' is %d"</span>%(string[i],ord(string[i])))
-print(total)
-</div></div></code></pre><h2 id="803-倒數三個詞"><a class="anchor hidden-xs" href="#803-倒數三個詞" title="803-倒數三個詞"><span class="octicon octicon-link"></span></a>803 倒數三個詞</h2><h3 id="說明2"><a class="anchor hidden-xs" href="#說明2" title="說明2"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入一個句子（至少有五個詞，以空白隔開），並輸出該句子倒數三個詞。</p><h3 id="輸入輸出2"><a class="anchor hidden-xs" href="#輸入輸出2" title="輸入輸出2"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
-<img src="https://i.imgur.com/Pnt5H1H.png" alt=""></p><p>範例輸出:<br>
-<img src="https://i.imgur.com/Gqg41jq.png" alt=""></p><h3 id="Code2"><a class="anchor hidden-xs" href="#Code2" title="Code2"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
-<span data-linenumber="2"></span>
-<span data-linenumber="3"></span>
-<span data-linenumber="4"></span></div><div class="code">s = input().split(<span class="hljs-string">' '</span>)
+<span data-linenumber="6"></span></div><div class="code">outfile = open(<span class="hljs-string">'write.txt'</span>,<span class="hljs-string">'w'</span>)
 
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">-3</span>,<span class="hljs-number">0</span>):
-    print(s[i],end=<span class="hljs-string">' '</span>)
-</div></div></code></pre><h2 id="804-大寫轉換"><a class="anchor hidden-xs" href="#804-大寫轉換" title="804-大寫轉換"><span class="octicon octicon-link"></span></a>804 大寫轉換</h2><h3 id="說明3"><a class="anchor hidden-xs" href="#說明3" title="說明3"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入一字串，分別將該字串轉換成全部大寫以及每個字的第一個字母大寫。</p><h3 id="輸入輸出3"><a class="anchor hidden-xs" href="#輸入輸出3" title="輸入輸出3"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
-<img src="https://i.imgur.com/s4fL8GZ.png" alt=""></p><p>範例輸出:<br>
-<img src="https://i.imgur.com/AnMdQQ3.png" alt=""></p><h3 id="Code3"><a class="anchor hidden-xs" href="#Code3" title="Code3"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
-<span data-linenumber="2"></span>
-<span data-linenumber="3"></span>
-<span data-linenumber="4"></span></div><div class="code">s = input()
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
+    outfile.write(input()+<span class="hljs-string">'\n'</span>)
 
-print(s.upper())
-print(s.title())
-</div></div></code></pre><h2 id="805-字串輸出"><a class="anchor hidden-xs" href="#805-字串輸出" title="805-字串輸出"><span class="octicon octicon-link"></span></a>805 字串輸出</h2><h3 id="說明4"><a class="anchor hidden-xs" href="#說明4" title="說明4"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，輸入四個分別含有小數1到4位的浮點數，然後將這四個浮點數以欄寬為7、欄與欄間隔一個空白字元、每列印兩個的方式，先列印向右靠齊，再列印向左靠齊，左右皆以直線 |（Vertical bar）作為邊界。</p><blockquote>
-<p>輸出浮點數到小數點後第二位。</p>
-</blockquote><h3 id="輸入輸出4"><a class="anchor hidden-xs" href="#輸入輸出4" title="輸入輸出4"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
-<img src="https://i.imgur.com/PNH0Cv9.png" alt=""></p><p>範例輸出:<br>
-<img src="https://i.imgur.com/RQo7UUF.png" alt=""></p><h3 id="Code4"><a class="anchor hidden-xs" href="#Code4" title="Code4"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
-<span data-linenumber="2"></span>
-<span data-linenumber="3"></span>
-<span data-linenumber="4"></span>
-<span data-linenumber="5"></span></div><div class="code">s = input()
-
-print(<span class="hljs-string">'|{:&lt;10}|'</span>.format(s))
-print(<span class="hljs-string">'|{:^10}|'</span>.format(s))
-print(<span class="hljs-string">'|{:&gt;10}|'</span>.format(s))
-</div></div></code></pre><h2 id="806-字元次數計算"><a class="anchor hidden-xs" href="#806-字元次數計算" title="806-字元次數計算"><span class="octicon octicon-link"></span></a>806 字元次數計算</h2><h3 id="說明5"><a class="anchor hidden-xs" href="#說明5" title="說明5"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讓使用者輸入一字串和一字元，並將此字串及字元作為參數傳遞給名為compute()的函式，此函式將回傳該字串中指定字元出現的次數，接著再輸出結果。</p><h3 id="輸入輸出5"><a class="anchor hidden-xs" href="#輸入輸出5" title="輸入輸出5"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
-<img src="https://i.imgur.com/JnR8owe.png" alt=""></p><p>範例輸出:<br>
-<img src="https://i.imgur.com/5Fe6VuI.png" alt=""></p><h3 id="Code5"><a class="anchor hidden-xs" href="#Code5" title="Code5"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+outfile.close()
+</div></div></code></pre><h2 id="902-資料加總"><a class="anchor hidden-xs" href="#902-資料加總" title="902-資料加總"><span class="octicon octicon-link"></span></a>902 資料加總</h2><h3 id="說明1"><a class="anchor hidden-xs" href="#說明1" title="說明1"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讀取read.txt的內容（內容為數字，以空白分隔）並將這些數字加總後輸出。檔案讀取完成後要關閉。</p><h3 id="輸入輸出1"><a class="anchor hidden-xs" href="#輸入輸出1" title="輸入輸出1"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸出:<br>
+<img src="https://i.imgur.com/332GYD9.png" alt=""></p><h3 id="Code1"><a class="anchor hidden-xs" href="#Code1" title="Code1"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
 <span data-linenumber="2"></span>
 <span data-linenumber="3"></span>
 <span data-linenumber="4"></span>
@@ -99,57 +60,46 @@ print(<span class="hljs-string">'|{:&gt;10}|'</span>.format(s))
 <span data-linenumber="8"></span>
 <span data-linenumber="9"></span>
 <span data-linenumber="10"></span>
-<span data-linenumber="11"></span></div><div class="code"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute</span><span class="hljs-params">(LIST,c)</span>:</span>
-    count=<span class="hljs-number">0</span>
-    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(LIST)):
-        <span class="hljs-keyword">if</span> LIST[i] == c:
-            count+=<span class="hljs-number">1</span>
-    <span class="hljs-keyword">return</span> count
+<span data-linenumber="11"></span></div><div class="code">infile = open(<span class="hljs-string">'./database/read.txt'</span>,<span class="hljs-string">'r'</span>)
+total = <span class="hljs-number">0</span>
 
-LIST = list(input())
-c = input()
-count=compute(LIST,c)
-print(<span class="hljs-string">f'<span class="hljs-subst">{c}</span> occurs <span class="hljs-subst">{count}</span> time(s)'</span>)
-</div></div></code></pre><h2 id="807-字串加總"><a class="anchor hidden-xs" href="#807-字串加總" title="807-字串加總"><span class="octicon octicon-link"></span></a>807 字串加總</h2><h3 id="說明6"><a class="anchor hidden-xs" href="#說明6" title="說明6"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，要求使用者輸入一字串，該字串為五個數字，以空白隔開。請將此五個數字加總（Total）並計算平均（Average）。</p><h3 id="輸入輸出6"><a class="anchor hidden-xs" href="#輸入輸出6" title="輸入輸出6"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
-<img src="https://i.imgur.com/GmPGSQy.png" alt=""></p><p>範例輸出:<br>
-<img src="https://i.imgur.com/6mjCrDV.png" alt=""></p><h3 id="Code6"><a class="anchor hidden-xs" href="#Code6" title="Code6"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
-<span data-linenumber="2"></span>
-<span data-linenumber="3"></span>
-<span data-linenumber="4"></span>
-<span data-linenumber="5"></span>
-<span data-linenumber="6"></span>
-<span data-linenumber="7"></span></div><div class="code">LIST = list(input().split(<span class="hljs-string">' '</span>))
-total=<span class="hljs-number">0</span>
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(LIST)):
-    total += int(LIST[i])
-avg = total/<span class="hljs-number">5</span>    
-print(<span class="hljs-string">f'Total = <span class="hljs-subst">{total}</span>'</span>)
-print(<span class="hljs-string">f'Average = <span class="hljs-subst">{avg}</span>'</span>)
-</div></div></code></pre><h2 id="808-社會安全碼"><a class="anchor hidden-xs" href="#808-社會安全碼" title="808-社會安全碼"><span class="octicon octicon-link"></span></a>808 社會安全碼</h2><h3 id="說明7"><a class="anchor hidden-xs" href="#說明7" title="說明7"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，提示使用者輸入一個社會安全碼SSN，格式為ddd-dd-dddd，d表示數字。若格式完全符合（正確的SSN）則顯示【Valid SSN】，否則顯示【Invalid SSN】。</p><h3 id="輸入輸出7"><a class="anchor hidden-xs" href="#輸入輸出7" title="輸入輸出7"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
-<img src="https://i.imgur.com/PSKYLON.png" alt=""></p><p><img src="https://i.imgur.com/tHYDLDV.png" alt=""></p><p>範例輸出:<br>
-<img src="https://i.imgur.com/qP9dT9T.png" alt=""></p><p><img src="https://i.imgur.com/ZWGacXl.png" alt=""></p><h3 id="Code7"><a class="anchor hidden-xs" href="#Code7" title="Code7"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+num = infile.read().split(<span class="hljs-string">' '</span>)
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(num)):
+    total += int(num[i])
+
+print(total)
+
+infile.close()
+</div></div></code></pre><h2 id="903-成績資料"><a class="anchor hidden-xs" href="#903-成績資料" title="903-成績資料"><span class="octicon octicon-link"></span></a>903 成績資料</h2><h3 id="說明2"><a class="anchor hidden-xs" href="#說明2" title="說明2"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，要求使用者輸入五個人的名字並加入到data.txt的尾端。之後再顯示此檔案的內容。</p><h3 id="輸入輸出2"><a class="anchor hidden-xs" href="#輸入輸出2" title="輸入輸出2"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
+<img src="https://i.imgur.com/J7xNLgd.png" alt=""></p><p>範例輸出:<br>
+<img src="https://i.imgur.com/bvgLQhb.png" alt=""></p><h3 id="Code2"><a class="anchor hidden-xs" href="#Code2" title="Code2"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
 <span data-linenumber="2"></span>
 <span data-linenumber="3"></span>
 <span data-linenumber="4"></span>
 <span data-linenumber="5"></span>
 <span data-linenumber="6"></span>
 <span data-linenumber="7"></span>
-<span data-linenumber="8"></span></div><div class="code">SSN = list(input().split(<span class="hljs-string">'-'</span>))
-FLAG = <span class="hljs-keyword">True</span>
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(SSN)):
-    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> SSN[i].isdigit():
-        print(<span class="hljs-string">'Invalid SSN'</span>)
-        FLAG = <span class="hljs-keyword">False</span>
-<span class="hljs-keyword">if</span> FLAG == <span class="hljs-keyword">True</span>:
-    print(<span class="hljs-string">'Valid SSN'</span>)
-</div></div></code></pre><h2 id="809-密碼規則"><a class="anchor hidden-xs" href="#809-密碼規則" title="809-密碼規則"><span class="octicon octicon-link"></span></a>809 密碼規則</h2><h3 id="說明8"><a class="anchor hidden-xs" href="#說明8" title="說明8"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，要求使用者輸入一個密碼（字串），檢查此密碼是否符合規則。密碼規則如下：<br>
-a. 必須至少八個字元。<br>
-b. 只包含英文字母和數字。<br>
-c. 至少要有一個大寫英文字母。<br>
-d. 若符合上述三項規則，程式將顯示檢查結果為【Valid password】，否則顯示【Invalid password】<br>
-。</p><h3 id="輸入輸出8"><a class="anchor hidden-xs" href="#輸入輸出8" title="輸入輸出8"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
-<img src="https://i.imgur.com/sn0wIvN.png" alt=""></p><p><img src="https://i.imgur.com/vtJPT9g.png" alt=""></p><p>範例輸出:<br>
-<img src="https://i.imgur.com/UW6EhHU.png" alt=""></p><p><img src="https://i.imgur.com/vmmEyXM.png" alt=""></p><h3 id="Code8"><a class="anchor hidden-xs" href="#Code8" title="Code8"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span></div><div class="code">outfile = open(<span class="hljs-string">'./database/data.txt'</span>,<span class="hljs-string">'a+'</span>)
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
+    outfile.write(<span class="hljs-string">'\n'</span>+input())
+    
+print(<span class="hljs-string">'Append completed!'</span>)
+print(<span class="hljs-string">'Content of "data.txt"'</span>)
+
+outfile.seek(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>)
+print(outfile.read())
+
+outfile.close()
+</div></div></code></pre><h2 id="904-資料計算"><a class="anchor hidden-xs" href="#904-資料計算" title="904-資料計算"><span class="octicon octicon-link"></span></a>904 資料計算</h2><h3 id="說明3"><a class="anchor hidden-xs" href="#說明3" title="說明3"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，讀取read.txt（每一列的格式為名字和身高、體重，以空白分隔）並顯示檔案內容、所有人的平均身高、平均體重以及最高者、最重者。</p><blockquote>
+<p>輸出浮點數到小數點後第二位。</p>
+</blockquote><h3 id="輸入輸出3"><a class="anchor hidden-xs" href="#輸入輸出3" title="輸入輸出3"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸出:<br>
+<img src="https://i.imgur.com/tNu7cZq.png" alt=""></p><h3 id="Code3"><a class="anchor hidden-xs" href="#Code3" title="Code3"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
 <span data-linenumber="2"></span>
 <span data-linenumber="3"></span>
 <span data-linenumber="4"></span>
@@ -168,54 +118,29 @@ d. 若符合上述三項規則，程式將顯示檢查結果為【Valid password
 <span data-linenumber="17"></span>
 <span data-linenumber="18"></span>
 <span data-linenumber="19"></span>
-<span data-linenumber="20"></span>
-<span data-linenumber="21"></span>
-<span data-linenumber="22"></span>
-<span data-linenumber="23"></span>
-<span data-linenumber="24"></span>
-<span data-linenumber="25"></span>
-<span data-linenumber="26"></span>
-<span data-linenumber="27"></span>
-<span data-linenumber="28"></span>
-<span data-linenumber="29"></span>
-<span data-linenumber="30"></span>
-<span data-linenumber="31"></span>
-<span data-linenumber="32"></span></div><div class="code"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">lenCheck</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-keyword">global</span> PASSWORD
-    <span class="hljs-keyword">global</span> FLAG
-    <span class="hljs-keyword">if</span> len(PASSWORD) &gt;= <span class="hljs-number">8</span>:
-        FLAG+=<span class="hljs-number">1</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">charCheck</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-keyword">global</span> PASSWORD
-    <span class="hljs-keyword">global</span> FLAG
-    <span class="hljs-keyword">if</span> PASSWORD.isalnum():
-        FLAG+=<span class="hljs-number">1</span>
+<span data-linenumber="20"></span></div><div class="code">infile = open(<span class="hljs-string">'./database/read904.txt'</span>,<span class="hljs-string">'r'</span>)
 
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">upperCheck</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-keyword">global</span> PASSWORD
-    <span class="hljs-keyword">global</span> FLAG
-    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(PASSWORD)):
-        <span class="hljs-keyword">if</span> PASSWORD[i].isupper(): 
-            FLAG+=<span class="hljs-number">1</span>
-            <span class="hljs-keyword">break</span>
-            
-PASSWORD = input()
-FLAG = <span class="hljs-number">0</span>
+name ,height ,weight = [],[],[]
 
-lenCheck()
+line = infile.readline()
 
-charCheck()
+<span class="hljs-keyword">while</span> line != <span class="hljs-string">''</span>:
+    print(line)
+    data = line.split()
+    name.append(data[<span class="hljs-number">0</span>])
+    height.append(int(data[<span class="hljs-number">1</span>]))
+    weight.append(int(data[<span class="hljs-number">2</span>]))
+    line = infile.readline()
 
-upperCheck()
+print(<span class="hljs-string">'Average Height: %.2f'</span>%(sum(height)/len(height)))
+print(<span class="hljs-string">'Average Weight: %.2f'</span>%((sum(weight)/len(weight))))
 
-<span class="hljs-keyword">if</span> FLAG ==<span class="hljs-number">3</span>:
-    print(<span class="hljs-string">'Valid password'</span>)
-<span class="hljs-keyword">else</span>:
-    print(<span class="hljs-string">'Invalid password'</span>)
-</div></div></code></pre><h2 id="810-最大值與最小值之差"><a class="anchor hidden-xs" href="#810-最大值與最小值之差" title="810-最大值與最小值之差"><span class="octicon octicon-link"></span></a>810 最大值與最小值之差</h2><h3 id="說明9"><a class="anchor hidden-xs" href="#說明9" title="說明9"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，首先要求使用者輸入正整數k（1 &lt;=k &lt;= 100），代表有k筆測試資料。每一筆測試資料是一串數字，每個數字之間以一空白區隔，請找出此串列數字中最大值和最小值之間的差。</p><blockquote>
-<p>差值輸出到小數點後第二位</p>
-</blockquote><h3 id="輸入輸出9"><a class="anchor hidden-xs" href="#輸入輸出9" title="輸入輸出9"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入/輸出:<br>
-<img src="https://i.imgur.com/uanFTiq.png" alt=""></p><h3 id="Code9"><a class="anchor hidden-xs" href="#Code9" title="Code9"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+print(<span class="hljs-string">'The tallest is %s with %.2f cm'</span>%(name[height.index(max(height))],max(height)))
+print(<span class="hljs-string">'The heaviest is %s with %.2f kg'</span>%(name[weight.index(max(weight))],max(weight)))
+infile.close()
+</div></div></code></pre><h2 id="905-字串資料刪除"><a class="anchor hidden-xs" href="#905-字串資料刪除" title="905-字串資料刪除"><span class="octicon octicon-link"></span></a>905 字串資料刪除</h2><h3 id="說明4"><a class="anchor hidden-xs" href="#說明4" title="說明4"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，要求使用者輸入檔案名稱data.txt和一字串s，顯示該檔案的內容。接著刪除檔案中的字串s，顯示刪除後的檔案內容並存檔。</p><h3 id="輸入輸出4"><a class="anchor hidden-xs" href="#輸入輸出4" title="輸入輸出4"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
+<img src="https://i.imgur.com/KoTOZLf.png" alt=""></p><p>範例輸出:<br>
+<img src="https://i.imgur.com/UjS2lnz.png" alt=""></p><h3 id="Code4"><a class="anchor hidden-xs" href="#Code4" title="Code4"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
 <span data-linenumber="2"></span>
 <span data-linenumber="3"></span>
 <span data-linenumber="4"></span>
@@ -224,23 +149,197 @@ upperCheck()
 <span data-linenumber="7"></span>
 <span data-linenumber="8"></span>
 <span data-linenumber="9"></span>
-<span data-linenumber="10"></span></div><div class="code">n = <span class="hljs-number">0</span>
-<span class="hljs-keyword">while</span> n &lt;<span class="hljs-number">1</span> <span class="hljs-keyword">or</span> n&gt;<span class="hljs-number">100</span>:
-    n = eval(input())
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span></div><div class="code">filename = input()
+food = input()
+file = open((<span class="hljs-string">'./database/'</span>+filename),<span class="hljs-string">'r+'</span>,encoding=<span class="hljs-string">'UTF-8'</span>)
+print(<span class="hljs-string">'===Before the deletion==='</span>)
 
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(n):
-    string = input().split(<span class="hljs-string">' '</span>)
-    LIST=[]
-    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(len(string)):
-        LIST.append(eval(string[j]))
-    print(<span class="hljs-string">'%.2f'</span>%((max(LIST)-min(LIST))))
-</div></div></code></pre><hr><p>相關文章:</p>
+line = file.read()
+print(line)
 
-		<a href="https://neroal.nctu.me/posts/TQC-%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80python(901~910)/" 
-						target="_blank" rel="noopener">Python TQC 901~910</a>
-					<br>
+print(<span class="hljs-string">'===After the deletion==='</span>)
+line = line.replace(food,<span class="hljs-string">''</span>)
+print(line)
 
-<h6 id="tags-python"><a class="anchor hidden-xs" href="#tags-python" title="tags-python"><span class="octicon octicon-link"></span></a>tags: <code>python</code></h6></div>
+file.seek(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>)
+file.truncate()
+file.write(line)
+
+file.close()
+
+</div></div></code></pre><h2 id="906-字串資料取代"><a class="anchor hidden-xs" href="#906-字串資料取代" title="906-字串資料取代"><span class="octicon octicon-link"></span></a>906 字串資料取代</h2><h3 id="說明5"><a class="anchor hidden-xs" href="#說明5" title="說明5"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，要求使用者輸入檔名data.txt、字串s1和字串s2。程式將檔案中的字串s1以s2取代之。</p><h3 id="輸入輸出5"><a class="anchor hidden-xs" href="#輸入輸出5" title="輸入輸出5"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
+<img src="https://i.imgur.com/E5R2D4e.png" alt=""></p><p>範例輸出:<br>
+<img src="https://i.imgur.com/GBbvVhk.png" alt=""></p><h3 id="Code5"><a class="anchor hidden-xs" href="#Code5" title="Code5"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span></div><div class="code">filename = input()
+s1 = input()
+s2 = input()
+
+file = open(<span class="hljs-string">'./database/'</span>+filename,<span class="hljs-string">'r+'</span>,encoding=<span class="hljs-string">'UTF-8'</span>)
+data = file.read()
+
+print(<span class="hljs-string">'=== Before the replacement ==='</span>)
+print(data)
+
+print(<span class="hljs-string">'=== After the replacement ==='</span>)
+data = data.replace(s1,s2)
+print(data)
+
+file.seek(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>)
+file.truncate()
+file.write(data)
+file.close()
+</div></div></code></pre><h2 id="907-詳細資料顯示"><a class="anchor hidden-xs" href="#907-詳細資料顯示" title="907-詳細資料顯示"><span class="octicon octicon-link"></span></a>907 詳細資料顯示</h2><h3 id="說明6"><a class="anchor hidden-xs" href="#說明6" title="說明6"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，要求使用者輸入檔名read.txt，顯示該檔案的行數、單字數（簡單起見，單字以空白隔開即可，忽略其它標點符號）以及字元數（不含空白）。</p><h3 id="輸入輸出6"><a class="anchor hidden-xs" href="#輸入輸出6" title="輸入輸出6"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
+<img src="https://i.imgur.com/Hb3trd7.png" alt=""></p><p>範例輸出:<br>
+<img src="https://i.imgur.com/KcFaNgs.png" alt=""></p><h3 id="Code6"><a class="anchor hidden-xs" href="#Code6" title="Code6"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span></div><div class="code">filename = input()
+
+file = open(<span class="hljs-string">'./database/'</span>+filename,<span class="hljs-string">'r'</span>,encoding=<span class="hljs-string">'UTF-8'</span>)
+
+linec = wordc = charc = <span class="hljs-number">0</span>
+
+<span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> file:
+    linec+=<span class="hljs-number">1</span>
+    SPLIT = line.split(<span class="hljs-string">' '</span>)
+    wordc+=len(SPLIT)
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(SPLIT)):
+        charc += len(SPLIT[i])
+
+print(linec,<span class="hljs-string">' line(s)'</span>)
+print(wordc,<span class="hljs-string">'word(s)'</span>)
+print(charc,<span class="hljs-string">'char(s)'</span>)
+
+file.close()
+</div></div></code></pre><h2 id="908-單字次數計算"><a class="anchor hidden-xs" href="#908-單字次數計算" title="908-單字次數計算"><span class="octicon octicon-link"></span></a>908 單字次數計算</h2><h3 id="說明7"><a class="anchor hidden-xs" href="#說明7" title="說明7"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，要求使用者輸入檔名read.txt，以及檔案中某單字出現的次數。輸出符合次數的單字，並依單字的第一個字母大小排序。（單字的判斷以空白隔開即可)</p><h3 id="輸入輸出7"><a class="anchor hidden-xs" href="#輸入輸出7" title="輸入輸出7"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
+<img src="https://i.imgur.com/CplfoZk.png" alt=""></p><p>範例輸出:<br>
+<img src="https://i.imgur.com/vIN7Y58.png" alt=""></p><h3 id="Code7"><a class="anchor hidden-xs" href="#Code7" title="Code7"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span></div><div class="code">word_dict = dict()
+filename = input()
+
+file = open(<span class="hljs-string">'./database/'</span>+filename,<span class="hljs-string">'r'</span>,encoding = <span class="hljs-string">'UTF-8'</span>)
+
+count = eval(input())
+
+<span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> file:
+    line_split = line.split(<span class="hljs-string">' '</span>)
+    <span class="hljs-keyword">for</span> word <span class="hljs-keyword">in</span> line_split:
+        <span class="hljs-keyword">if</span> word <span class="hljs-keyword">in</span> word_dict:
+            word_dict[word]+=<span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            word_dict[word] = <span class="hljs-number">1</span>
+
+<span class="hljs-keyword">for</span> word <span class="hljs-keyword">in</span> sorted(word_dict):
+    <span class="hljs-keyword">if</span> word_dict[word] == count:
+        print(word)
+</div></div></code></pre><h2 id="909-聯絡人資料"><a class="anchor hidden-xs" href="#909-聯絡人資料" title="909-聯絡人資料"><span class="octicon octicon-link"></span></a>909 聯絡人資料</h2><h3 id="說明8"><a class="anchor hidden-xs" href="#說明8" title="說明8"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，將使用者輸入的五個人的資料寫入data.dat檔，每一個人的資料為姓名和電話號碼，以空白分隔。再將檔案加以讀取並顯示檔案內容。</p><h3 id="輸入輸出8"><a class="anchor hidden-xs" href="#輸入輸出8" title="輸入輸出8"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸入:<br>
+<img src="https://i.imgur.com/8IlvTWn.png" alt=""></p><p>範例輸出:<br>
+<img src="https://i.imgur.com/u2OJJZR.png" alt=""></p><h3 id="Code8"><a class="anchor hidden-xs" href="#Code8" title="Code8"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span></div><div class="code">file = open(<span class="hljs-string">'./database/data.dat'</span>,<span class="hljs-string">'w+'</span>,encoding=<span class="hljs-string">'UTF-8'</span>)
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
+    file.write(input()+<span class="hljs-string">'\n'</span>)
+
+print(<span class="hljs-string">'Content of "data.dat"'</span>)
+file.seek(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>)
+
+print(file.read())
+    
+file.close()
+</div></div></code></pre><h2 id="910-學生基本資料"><a class="anchor hidden-xs" href="#910-學生基本資料" title="910-學生基本資料"><span class="octicon octicon-link"></span></a>910 學生基本資料</h2><h3 id="說明9"><a class="anchor hidden-xs" href="#說明9" title="說明9"><span class="octicon octicon-link"></span></a>說明:</h3><p>請撰寫一程式，要求使用者讀入read.dat（以UTF-8編碼格式讀取），第一列為欄位名稱，第二列之後是個人記錄。請輸出檔案內容並顯示男生人數和女生人數（根據"性別"欄位，0為女性、1為男性）。</p><h3 id="輸入輸出9"><a class="anchor hidden-xs" href="#輸入輸出9" title="輸入輸出9"><span class="octicon octicon-link"></span></a>輸入/輸出</h3><p>範例輸出:<br>
+<img src="https://i.imgur.com/R9sFEws.png" alt=""></p><h3 id="Code9"><a class="anchor hidden-xs" href="#Code9" title="Code9"><span class="octicon octicon-link"></span></a>Code:</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span></div><div class="code">file = open(<span class="hljs-string">'./database/read.dat'</span>,<span class="hljs-string">'r'</span>,encoding=<span class="hljs-string">'UTF-8'</span>)
+males = females = <span class="hljs-number">0</span>
+
+<span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> file:   
+    print(line)
+    line_split = line.split(<span class="hljs-string">' '</span>)
+    <span class="hljs-keyword">if</span> line_split[<span class="hljs-number">2</span>] == <span class="hljs-string">'1'</span>:
+        males+=<span class="hljs-number">1</span>
+    <span class="hljs-keyword">elif</span> line_split[<span class="hljs-number">2</span>]==<span class="hljs-string">'0'</span>:
+        females+=<span class="hljs-number">1</span>
+    
+print(<span class="hljs-string">f'Number of males:<span class="hljs-subst">{males}</span>'</span>)
+print(<span class="hljs-string">f'Number of females:<span class="hljs-subst">{females}</span>'</span>)
+
+file.close()
+</div></div></code></pre><h6 id="tags-python"><a class="anchor hidden-xs" href="#tags-python" title="tags-python"><span class="octicon octicon-link"></span></a>tags: <code>python</code></h6></div>
     <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
         <div class="pull-right dropdown">
             <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
@@ -248,62 +347,62 @@ upperCheck()
             </a>
             <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
                 <div class="toc"><ul class="nav">
-<li class=""><a href="#Python-TQC-801810" title="Python TQC 801~810">Python TQC 801~810</a><ul class="nav">
-<li><a href="#801-字串索引" title="801 字串索引">801 字串索引</a><ul class="nav">
+<li class=""><a href="#Python-TQC-901910" title="Python TQC 901~910">Python TQC 901~910</a><ul class="nav">
+<li><a href="#901-成績資料" title="901 成績資料">901 成績資料</a><ul class="nav">
 <li><a href="#說明" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#802-字元對應" title="802 字元對應">802 字元對應</a><ul class="nav">
+<li><a href="#902-資料加總" title="902 資料加總">902 資料加總</a><ul class="nav">
 <li><a href="#說明1" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出1" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code1" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#803-倒數三個詞" title="803 倒數三個詞">803 倒數三個詞</a><ul class="nav">
+<li><a href="#903-成績資料" title="903 成績資料">903 成績資料</a><ul class="nav">
 <li><a href="#說明2" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出2" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code2" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#804-大寫轉換" title="804 大寫轉換">804 大寫轉換</a><ul class="nav">
+<li><a href="#904-資料計算" title="904 資料計算">904 資料計算</a><ul class="nav">
 <li><a href="#說明3" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出3" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code3" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#805-字串輸出" title="805 字串輸出">805 字串輸出</a><ul class="nav">
+<li><a href="#905-字串資料刪除" title="905 字串資料刪除">905 字串資料刪除</a><ul class="nav">
 <li><a href="#說明4" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出4" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code4" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#806-字元次數計算" title="806 字元次數計算">806 字元次數計算</a><ul class="nav">
+<li><a href="#906-字串資料取代" title="906 字串資料取代">906 字串資料取代</a><ul class="nav">
 <li><a href="#說明5" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出5" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code5" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#807-字串加總" title="807 字串加總">807 字串加總</a><ul class="nav">
+<li><a href="#907-詳細資料顯示" title="907 詳細資料顯示">907 詳細資料顯示</a><ul class="nav">
 <li><a href="#說明6" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出6" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code6" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#808-社會安全碼" title="808 社會安全碼">808 社會安全碼</a><ul class="nav">
+<li><a href="#908-單字次數計算" title="908 單字次數計算">908 單字次數計算</a><ul class="nav">
 <li><a href="#說明7" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出7" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code7" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#809-密碼規則" title="809 密碼規則">809 密碼規則</a><ul class="nav">
+<li><a href="#909-聯絡人資料" title="909 聯絡人資料">909 聯絡人資料</a><ul class="nav">
 <li><a href="#說明8" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出8" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code8" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#810-最大值與最小值之差" title="810 最大值與最小值之差">810 最大值與最小值之差</a><ul class="nav">
+<li><a href="#910-學生基本資料" title="910 學生基本資料">910 學生基本資料</a><ul class="nav">
 <li><a href="#說明9" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出9" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code9" title="Code:">Code:</a></li>
@@ -318,62 +417,62 @@ upperCheck()
     </div>
     <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
         <div class="toc"><ul class="nav">
-<li class=""><a href="#Python-TQC-801810" title="Python TQC 801~810">Python TQC 801~810</a><ul class="nav">
-<li><a href="#801-字串索引" title="801 字串索引">801 字串索引</a><ul class="nav">
+<li class=""><a href="#Python-TQC-901910" title="Python TQC 901~910">Python TQC 901~910</a><ul class="nav">
+<li><a href="#901-成績資料" title="901 成績資料">901 成績資料</a><ul class="nav">
 <li><a href="#說明" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#802-字元對應" title="802 字元對應">802 字元對應</a><ul class="nav">
+<li><a href="#902-資料加總" title="902 資料加總">902 資料加總</a><ul class="nav">
 <li><a href="#說明1" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出1" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code1" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#803-倒數三個詞" title="803 倒數三個詞">803 倒數三個詞</a><ul class="nav">
+<li><a href="#903-成績資料" title="903 成績資料">903 成績資料</a><ul class="nav">
 <li><a href="#說明2" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出2" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code2" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#804-大寫轉換" title="804 大寫轉換">804 大寫轉換</a><ul class="nav">
+<li><a href="#904-資料計算" title="904 資料計算">904 資料計算</a><ul class="nav">
 <li><a href="#說明3" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出3" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code3" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#805-字串輸出" title="805 字串輸出">805 字串輸出</a><ul class="nav">
+<li><a href="#905-字串資料刪除" title="905 字串資料刪除">905 字串資料刪除</a><ul class="nav">
 <li><a href="#說明4" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出4" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code4" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#806-字元次數計算" title="806 字元次數計算">806 字元次數計算</a><ul class="nav">
+<li><a href="#906-字串資料取代" title="906 字串資料取代">906 字串資料取代</a><ul class="nav">
 <li><a href="#說明5" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出5" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code5" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#807-字串加總" title="807 字串加總">807 字串加總</a><ul class="nav">
+<li><a href="#907-詳細資料顯示" title="907 詳細資料顯示">907 詳細資料顯示</a><ul class="nav">
 <li><a href="#說明6" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出6" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code6" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#808-社會安全碼" title="808 社會安全碼">808 社會安全碼</a><ul class="nav">
+<li><a href="#908-單字次數計算" title="908 單字次數計算">908 單字次數計算</a><ul class="nav">
 <li><a href="#說明7" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出7" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code7" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#809-密碼規則" title="809 密碼規則">809 密碼規則</a><ul class="nav">
+<li><a href="#909-聯絡人資料" title="909 聯絡人資料">909 聯絡人資料</a><ul class="nav">
 <li><a href="#說明8" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出8" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code8" title="Code:">Code:</a></li>
 </ul>
 </li>
-<li><a href="#810-最大值與最小值之差" title="810 最大值與最小值之差">810 最大值與最小值之差</a><ul class="nav">
+<li><a href="#910-學生基本資料" title="910 學生基本資料">910 學生基本資料</a><ul class="nav">
 <li><a href="#說明9" title="說明:">說明:</a></li>
 <li><a href="#輸入輸出9" title="輸入/輸出">輸入/輸出</a></li>
 <li><a href="#Code9" title="Code:">Code:</a></li>
