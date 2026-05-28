@@ -1,6 +1,14 @@
+# Astro
+node_modules/
+dist/
+.astro/
+
+# macOS
+.DS_Store
+
+# Legacy Jekyll (kept for reference)
 *.gem
 .bundle
 .sass-cache
 _site
 Gemfile.lock
-.DS_Store

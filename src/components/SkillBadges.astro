@@ -1,0 +1,103 @@
+---
+const skillGroups = [
+  {
+    label: 'Backend',
+    skills: ['Node.js', 'Express', 'MongoDB', 'Redis'],
+  },
+  {
+    label: 'Mobile / App',
+    skills: ['Swift', 'SwiftUI'],
+  },
+  {
+    label: 'Frontend',
+    skills: ['Vue.js'],
+  },
+];
+---
+
+<section class="skills-section">
+  <h2 class="section-title">技術棧</h2>
+  <div class="skill-groups">
+    {skillGroups.map((group) => (
+      <div class="skill-group">
+        <span class="group-label">{group.label}</span>
+        <div class="skill-badges">
+          {group.skills.map((skill) => (
+            <span class="skill-badge">{skill}</span>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .skills-section {
+    padding: 4rem 0;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+  }
+
+  .skill-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .skill-group {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .group-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-subtle);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    min-width: 140px;
+    flex-shrink: 0;
+  }
+
+  .skill-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .skill-badge {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    background: var(--surface);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
+    cursor: default;
+  }
+
+  .skill-badge:hover {
+    color: var(--accent);
+    border-color: rgba(129, 140, 248, 0.3);
+    background: var(--accent-dim);
+  }
+
+  @media (max-width: 600px) {
+    .skill-group {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .group-label {
+      min-width: auto;
+    }
+  }
+</style>

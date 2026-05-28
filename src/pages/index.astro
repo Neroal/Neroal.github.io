@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import FeaturedProject from '../components/FeaturedProject.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import SkillBadges from '../components/SkillBadges.astro';
+import BlogPreview from '../components/BlogPreview.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog');
+const recentPosts = allPosts
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 5);
+---
+
+<BaseLayout title="Neroal Wu — Backend Engineer & iOS Developer">
+  <Hero />
+
+  <div class="content-wrapper">
+    <section id="projects" class="section">
+      <div class="section-header">
+        <h2 class="section-heading">主要作品</h2>
+      </div>
+      <FeaturedProject
+        title="Asset Rebalancer"
+        description="iOS 投資組合管理 App，追蹤台股/美股資產配置並提供智慧再平衡建議"
+        appStoreUrl="https://apps.apple.com/tw/app/asset-rebalancer/id6760184993"
+        techStack={['Swift', 'SwiftUI', 'Firebase', 'MVVM', 'async/await']}
+        features={[
+          'TWSE + Yahoo Finance 即時股價整合',
+          'Firebase 雲端同步，多裝置無縫使用',
+          '智慧再平衡演算法，一鍵計算調整比例',
+          '中英文雙語介面 (zh / en)',
+        ]}
+      />
+
+      <div class="other-projects">
+        <h3 class="other-title">其他專案</h3>
+        <div class="projects-grid">
+          <ProjectCard
+            title="發票對對碰 (Invoice Swipe Game)"
+            description="台灣統一發票主題的滑動配對遊戲，含 Game Center 排行榜、每日挑戰、AVAudioEngine 合成音效、StoreKit 2 IAP"
+            tags={['Swift', 'SwiftUI', 'GameKit', 'StoreKit 2', 'AVAudioEngine']}
+            status="review"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <SkillBadges />
+    </section>
+
+    <section class="section">
+      <BlogPreview posts={recentPosts} />
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .content-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .section {
+    padding: 2rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-heading {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+  }
+
+  .other-projects {
+    margin-top: 3rem;
+  }
+
+  .other-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: -0.01em;
+    margin-bottom: 1.25rem;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  @media (max-width: 640px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

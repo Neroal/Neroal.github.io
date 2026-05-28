@@ -1,0 +1,229 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  appStoreUrl: string;
+  techStack: string[];
+  features: string[];
+}
+
+const { title, description, appStoreUrl, techStack, features } = Astro.props;
+---
+
+<div class="featured-card">
+  <div class="featured-accent-line"></div>
+  <div class="featured-inner">
+    <div class="featured-content">
+      <div class="featured-badge">
+        <span class="badge-dot"></span>Featured App · App Store
+      </div>
+      <h3 class="featured-title">{title}</h3>
+      <p class="featured-desc">{description}</p>
+      <ul class="featured-features">
+        {features.map((f) => (
+          <li class="featured-feature">
+            <span class="feature-arrow">→</span>
+            <span>{f}</span>
+          </li>
+        ))}
+      </ul>
+      <div class="tech-stack">
+        {techStack.map((tech) => (
+          <span class="tech-badge">{tech}</span>
+        ))}
+      </div>
+      <a href={appStoreUrl} target="_blank" rel="noopener noreferrer" class="app-store-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+        </svg>
+        App Store ↗
+      </a>
+    </div>
+    <div class="featured-mockup" aria-hidden="true">
+      <div class="mockup-phone">
+        <div class="mockup-screen">
+          <div class="mockup-label">Screenshot<br/>Coming Soon</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .featured-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .featured-card:hover {
+    border-color: var(--border-hover);
+    box-shadow: 0 0 40px rgba(129, 140, 248, 0.06);
+  }
+
+  .featured-accent-line {
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), rgba(129, 140, 248, 0.2), transparent);
+  }
+
+  .featured-inner {
+    padding: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  @media (max-width: 700px) {
+    .featured-inner {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .featured-mockup {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .featured-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .badge-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #4ade80;
+    box-shadow: 0 0 6px rgba(74, 222, 128, 0.6);
+  }
+
+  .featured-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
+  }
+
+  .featured-desc {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 480px;
+  }
+
+  .featured-features {
+    list-style: none;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .featured-feature {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+  }
+
+  .feature-arrow {
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    flex-shrink: 0;
+  }
+
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .tech-badge {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 4px;
+    background: var(--surface-2);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    letter-spacing: 0.02em;
+  }
+
+  .app-store-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.25rem;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 7px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+
+  .app-store-btn:hover {
+    background: #6d7cf5;
+    box-shadow: 0 0 16px var(--accent-glow);
+    transform: translateY(-1px);
+  }
+
+  .featured-mockup {
+    flex-shrink: 0;
+  }
+
+  .mockup-phone {
+    width: 140px;
+    height: 240px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .mockup-phone::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 4px;
+    background: var(--border-hover);
+    border-radius: 2px;
+  }
+
+  .mockup-screen {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .mockup-label {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--text-subtle);
+    line-height: 1.5;
+    text-align: center;
+  }
+</style>
