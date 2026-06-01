@@ -1,0 +1,103 @@
+---
+const highlights = [
+  { value: '90%', label: '現行專案導入自動化部署' },
+  { value: '34', label: '台 Server 接入 CI/CD' },
+  { value: '10→1', label: '部署耗時（分鐘）' },
+];
+---
+
+<section id="about" class="about">
+  <div class="section-header">
+    <h2 class="section-heading">關於我</h2>
+  </div>
+  <div class="about-body">
+    <p class="about-text">
+約 4 年軟體開發資歷，近 2 年專注後端與 DevOps。擅長從<strong>前後端開發、CI/CD 到服務部署與監控</strong>的一條龍交付。
+      主導部門的 CI/CD 標準化，並打造內部 CLI 工具與可重用的自動化部署流程，將團隊從開新專案到上線的流程標準化；
+      日常以 Vue 開發前端、Node.js 生態系打造後端服務並部署於 AWS。
+      工作之餘獨立開發 iOS App 並上架 App Store。
+    </p>
+    <div class="about-highlights">
+      {highlights.map((item) => (
+        <div class="highlight">
+          <span class="highlight-value">{item.value}</span>
+          <span class="highlight-label">{item.label}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-heading {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+  }
+
+  .about-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-text {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--text-muted);
+    max-width: 720px;
+  }
+
+  .about-text strong {
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  .about-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .highlight {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    flex: 1 1 160px;
+    transition: border-color 0.2s, background 0.2s;
+  }
+
+  .highlight:hover {
+    border-color: rgba(129, 140, 248, 0.3);
+    background: var(--accent-dim);
+  }
+
+  .highlight-value {
+    font-family: var(--font-mono);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+  }
+
+  .highlight-label {
+    font-size: 0.8rem;
+    color: var(--text-subtle);
+    line-height: 1.4;
+  }
+
+  @media (max-width: 600px) {
+    .highlight {
+      flex-basis: 100%;
+    }
+  }
+</style>

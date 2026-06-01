@@ -1,0 +1,197 @@
+---
+const experiences = [
+  {
+    company: '聯和科創股份有限公司',
+    role: '後端工程師',
+    period: '2024.04 – 現在',
+    summary:
+      '負責後端服務開發與部門 CI/CD 自動化，從前後端開發、部署到服務監控一條龍交付。',
+    achievements: [
+      {
+        title: '主導部門 CI/CD 標準化',
+        detail:
+          '導入前專案以 FileZilla 手動同步到 Server 再手動下指令啟動服務。我設計並導入 GitLab CI/CD Component、撰寫部署規範與新機 GitLab Runner 安裝手冊，工程師只需在 gitlab-ci.yml 設定部署 tag 與專案路徑即可達成 push 後自動部署。現行 90% 專案、橫跨 34 台 Server 採用。',
+      },
+      {
+        title: '開發內部專案鷹架 CLI 工具',
+        detail:
+          '為解決開新專案需手動複製舊專案、結構與設定易不一致的問題，開發並發布內部 npm 套件 cad-cli（Commander + Handlebars，含 100+ Jest 測試）。一行指令即可產生符合團隊規範的 Express 專案骨架，並支援快速生成 resource（自動產出 model／service／controller／route 並注入路由）、cron、middleware 樣板。產出專案內建 PM2 ecosystem 與 GitLab CI/CD 設定，開箱即接入既有自動化部署流程；以 conventional commits 驅動 semantic versioning 自動發版至私有 GitLab npm registry。',
+      },
+      {
+        title: '從零建立部門技術文件體系',
+        detail:
+          '加入前部門無技術文件可循，獨力建立逾 10 份開發規範與操作手冊，涵蓋 GitLab Flow 分支協作、CI/CD 建置、PM2 服務啟動、環境變數管理、地端伺服器安裝、本地開發環境到新進人員快速上手指南，將原本仰賴口耳相傳的知識制度化，統一團隊開發實務並降低新人上手成本。',
+      },
+      {
+        title: '部署效率與可靠度提升',
+        detail:
+          '單次部署從約 10 分鐘（含手動下指令）縮短至約 1 分鐘；退版由手動修改 Server 並 reload，改為一鍵觸發前一版本 Job 完成；部署完成自動發送 Slack 通知，即時掌握服務狀態。',
+      },
+      {
+        title: '全端開發',
+        detail:
+          'Vue 開發前端，Node.js + Express + MongoDB + Redis 打造後端服務（PM2 執行），部署於 AWS。',
+      },
+      {
+        title: '服務監控自建 (POC)',
+        detail:
+          '針對內網服務斷線與 Crash 問題，於多台機器自架 Loki 與 Prometheus Push Agent 收集 metrics，並以 Grafana 呈現各 Server 服務狀態，輔助問題排查。',
+      },
+    ],
+  },
+  {
+    company: '鈊象電子股份有限公司',
+    role: '遊戲客戶端工程師',
+    period: '2021.09 – 2023.10',
+    summary:
+      '手機遊戲客戶端開發，使用 Cocos2d-x / Cocos Creator，語言為 Lua 與 TypeScript。',
+    achievements: [
+      {
+        title: '0 到 1 新專案主要客戶端開發',
+        detail:
+          '訓練結束後加入一款類 Monopoly GO 的全新手機遊戲專案，從零開始擔任主要客戶端開發，負責平台模組機制與主遊戲流程的實作。',
+      },
+      {
+        title: '既有遊戲平台維運',
+        detail:
+          '新人訓練期間參與既有遊戲平台維護，處理線上專案的 Crash Report 修復，並於新功能上線時調整相關平台模組，維持服務穩定。',
+      },
+    ],
+  },
+];
+---
+
+<section id="experience" class="experience">
+  <div class="section-header">
+    <h2 class="section-heading">工作經歷</h2>
+  </div>
+  <div class="exp-list">
+    {experiences.map((exp) => (
+      <article class="exp-card">
+        <header class="exp-head">
+          <div class="exp-title-row">
+            <h3 class="exp-company">{exp.company}</h3>
+            <span class="exp-period">{exp.period}</span>
+          </div>
+          <span class="exp-role">{exp.role}</span>
+          <p class="exp-summary">{exp.summary}</p>
+        </header>
+        <ul class="exp-achievements">
+          {exp.achievements.map((item) => (
+            <li class="achievement">
+              <span class="achievement-title">{item.title}</span>
+              <span class="achievement-detail">{item.detail}</span>
+            </li>
+          ))}
+        </ul>
+      </article>
+    ))}
+  </div>
+</section>
+
+<style>
+  .section-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-heading {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+  }
+
+  .exp-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.75rem;
+    transition: border-color 0.2s;
+  }
+
+  .exp-card:hover {
+    border-color: var(--border-hover);
+  }
+
+  .exp-title-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .exp-company {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.01em;
+  }
+
+  .exp-period {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-subtle);
+    flex-shrink: 0;
+  }
+
+  .exp-role {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: var(--accent);
+    margin-top: 0.35rem;
+  }
+
+  .exp-summary {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-top: 0.75rem;
+  }
+
+  .exp-achievements {
+    list-style: none;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+
+  .achievement {
+    position: relative;
+    padding-left: 1.25rem;
+  }
+
+  .achievement::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 8px var(--accent-glow);
+  }
+
+  .achievement-title {
+    display: block;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.3rem;
+  }
+
+  .achievement-detail {
+    display: block;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+  }
+
+  @media (max-width: 600px) {
+    .exp-card {
+      padding: 1.25rem;
+    }
+  }
+</style>
