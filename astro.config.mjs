@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config';
 export default defineConfig({
-  site: 'https://www.neroal.com',
+  site: 'https://neroal.github.io',
   output: 'static',
 });
